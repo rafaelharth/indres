@@ -133,7 +133,7 @@ MODEL = "resnet18"  # only resnet is supported
 
 PROBE_DATASET = "broden"  # currently only broden dataset is supported
 SCORE_THRESHOLD = 0.01  # the threshold such that neurons with scores below it are shown in gray
-SAMPLE_N = 100  # number of images sampled for each neuron
+SAMPLE_N = 8  # number of images sampled for each neuron
 
 OUTPUT_FOLDER = "" # This is set in init because circular imports problem
 
