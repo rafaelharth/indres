@@ -2,11 +2,34 @@
 Class that contains the bulk of the code for creating the annotation game files for the user study.
 """
 
+
 import os
+import zipfile
+import shutil
 import formulas.parser as Parser
 import formulas.utils as FU
 
 import loaders.metadata_loader as MetaData
+
+# def zipdir(path, ziph):
+#     # ziph is zipfile handle
+#     for root, dirs, files in os.walk(path):
+#         for file in files:
+#             ziph.write(os.path.join(root, file),
+#                        os.path.relpath(os.path.join(root, file),
+#                                        os.path.join(path, '..')))
+
+
+def zip(src, dst, folder):
+    zf = zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED)
+    abs_src = os.path.abspath(src)
+    for dirname, subdirs, files in os.walk(src):
+        for filename in files:
+            absname = os.path.abspath(os.path.join(dirname, filename))
+            arcname = absname[len(abs_src) + 1:]
+            zf.write(absname, f"{folder}/{arcname}")
+    zf.close()
+
 
 def clean(filename):
     n_dashes = 0
@@ -19,29 +42,27 @@ def clean(filename):
 
 def create_html(neuron_i, map_im_2_activations, threshold, results, mode, indices, access):
 
-    if not os.path.exists(f"results/annotation_game/neuron{neuron_i}"):
-        os.mkdir(f"results/annotation_game/neuron{neuron_i}")
-    if not os.path.exists(f"results/annotation_game/neuron{neuron_i}/filenames"):
-        os.mkdir(f"results/annotation_game/neuron{neuron_i}/filenames/")
-    if not os.path.exists(f"results/annotation_game/neuron{neuron_i}/masks"):
-        os.mkdir(f"results/annotation_game/neuron{neuron_i}/masks/")
+    if not os.path.exists(f"results/annotation_game/{neuron_i}_filenames"):
+        os.mkdir(f"results/annotation_game/{neuron_i}_filenames/")
+    if not os.path.exists(f"results/annotation_game/{neuron_i}_masks"):
+        os.mkdir(f"results/annotation_game/{neuron_i}_masks/")
 
     mode_s = 'Training' if mode == 'train' else 'Test'
 
-    ##############################################################################
-    # Before turning to the html code, first collect some necessary information. #
-    ##############################################################################
+    # ------------------------------------------------------------------------------
+    # - Before turning to the html code, first collect some necessary information. -
+    # ------------------------------------------------------------------------------
     label_mask = FU.compute_composite_mask(Parser.parse(results[neuron_i]['formula']))
 
     if mode == 'train':
         for i in indices:
             bitmask = map_im_2_activations[i] > threshold
-            with open(f'results/annotation_game/neuron{neuron_i}/masks/{i}.txt', 'w') as f:
+            with open(f'results/annotation_game/{neuron_i}_masks/{i}.txt', 'w') as f:
                 line1 = "".join(['1' if x else '0' for x in bitmask.ravel()])
                 line2 = "".join(['1' if x else '0' for x in label_mask[i].ravel()]) if access else ""
                 f.write(line1 + line2)
         for i in indices:
-            with open(f'results/annotation_game/neuron{neuron_i}/filenames/{i}.txt', 'w') as f:
+            with open(f'results/annotation_game/{neuron_i}_filenames/{i}.txt', 'w') as f:
                 f.write(clean(MetaData.filename(i)))
 
         indices = indices[60:]
@@ -52,7 +73,7 @@ def create_html(neuron_i, map_im_2_activations, threshold, results, mode, indice
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    <script src='{neuron_i}_script_{mode}.js'></script>
+    <script src='{neuron_i}_script.js'></script>
   </head>
 
   <body class="unitviz">
@@ -72,8 +93,9 @@ def create_html(neuron_i, map_im_2_activations, threshold, results, mode, indice
     if mode == 'train':
         html += """
             <b>R</b> to reset <br />
-            <b>Arrow Keys</b> to nagivate through images <br />
-            <b>P</b> to pause/unpause timer"""
+            <b>Arrow Keys</b> to nagivate through images <br />"""
+        # html +="""
+        #     <b>P</b> to pause/unpause timer"""
     html += """
           </p>
         </td>
@@ -99,9 +121,6 @@ def create_html(neuron_i, map_im_2_activations, threshold, results, mode, indice
 
     javascript = f"""var indices = {indices.tolist()};
 var neuron_i = {neuron_i};
-var endTime = 0;
-var distance = 0;
-var paused = false;
 var canvas;
 var context;
 var W;
@@ -263,20 +282,6 @@ async function eL(e) {"""
       }
       redrawImage();
     }
-  } else if (e.keyCode == "80") {
-    if (paused) {
-        time = Math.round(new Date().getTime()/1000);
-        
-        distance = parseInt(getCookie("distance"));
-        setCookie("distance=null;");
-        endTime = time + distance;
-        setCookie("endTimeString=" + endTime + ";");
-        paused = false;
-    } else {
-        setCookie("distance=" + distance + ";");
-        paused = true;
-    }
-    setTime();
   }"""
 
     javascript += """
@@ -332,28 +337,7 @@ function computeImRoU() {
 }
 
 function init() {
-    d = parseInt(getCookie("distance"));
-    
-    if (isNaN(d)) {
-        endTime = parseInt(getCookie("endTimeString"));
-        
-        if (isNaN(endTime)) {
-            var currentTime = Math.round(new Date().getTime()/1000);""" + f"""
-            endTime = currentTime + {'40 * 60' if mode == 'train' else '15 * 60'};""" + """
-        }
-    } else {
-        var time = Math.round(new Date().getTime()/1000);
-        endTime = time + d;
-        setCookie("endTimeString=" + endTime + ";")
-        setCookie("distance=null;")
-    }
-    
-    
-    // Update the count down every 1 second
-    setTime();
-    var x = setInterval(setTime, 1000);
     readGuesses();
-  
 """
     if mode == 'test':
 
@@ -384,7 +368,6 @@ function init() {
       tf2.textContent = 'Latest Score: ' + Math.round(1000 * getCookie('latestScore')) / 1000;
     }
     tf3.textContent = 'Image ' + (guesses+1) + '/' + indices.length;
-    setCookie("endTimeString=" + endTime + ';')
     loadNext();"""
     if mode == 'test':
         javascript += "\n}"
@@ -399,26 +382,7 @@ function setTime() {"""
             return;
         }
 """
-    javascript += """
-        
-    if (paused) {
-        document.getElementById("tf4").innerHTML = "(paused)";
-    } else {
-      var now = Math.round(new Date().getTime()/1000);
-    
-      // Find the distance between now and the count down date
-      distance = endTime - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var minutes = Math.floor((distance % (60 * 60)) / 60);
-      var seconds = Math.floor(distance % 60);
-    
-      document.getElementById("tf4").innerHTML = ('00'+minutes).slice(-2) + ":" + ('00'+seconds).slice(-2);
-      
-      if (distance < 0) {
-        document.getElementById("tf4").innerHTML = "TIME OUT";
-      }
-    }
+    javascript += """    
 }
 
 function getCookie(cname) {""" + f"""
@@ -488,7 +452,7 @@ function draw(e) {"""
 
 
 async function readNeuronMask(i) {
-  name = 'masks/' + neuron_i + '/' + i + '.txt';
+  name = neuron_i + 'm/' + i + '.txt';
   await fetch(name)
   .then(response => response.text())
   .then(text => textToNeuronMask(text))
@@ -506,7 +470,7 @@ function textToNeuronMask(text) {
         javascript += """
 
 async function readLabelMask(i) {
-    name = 'masks/' + neuron_i + '/' + i + '.txt';
+    name = neuron_i + 'm/' + i + '.txt';
     await fetch(name)
     .then(response => response.text())
     .then(text => textToLabelMask(text))
@@ -523,7 +487,7 @@ function textToLabelMask(text) {
     javascript += """
 
 async function readFilename(i) {
-    name = 'filenames/' + neuron_i + '/' + i + '.txt'
+    name = neuron_i + 'f/' + i + '.txt'
     await fetch(name)
     .then(response => response.text())
     .then(text => textToFilename(text))
@@ -611,8 +575,17 @@ function sum(twoDimArray) {
 function compute_intersection(a1, a2) {
   return a1.map((b, i) => b.map((x, j) => x && a2[i][j]));
 }"""
-    with open(f"results/annotation_game/neuron{neuron_i}/neuron{neuron_i}_{mode}.html", 'w') as f:
+    with open(f"results/annotation_game/{neuron_i}.html", 'w') as f:
         f.write(html)
 
-    with open(f"results/annotation_game/neuron{neuron_i}/{neuron_i}_script_{mode}.js", 'w') as f:
+    with open(f"results/annotation_game/{neuron_i}_script.js", 'w') as f:
         f.write(javascript)
+
+
+    zip(f"results/annotation_game/{neuron_i}_filenames/", f"results/annotation_game/{neuron_i}f.zip", f"{neuron_i}f")
+    zip(f"results/annotation_game/{neuron_i}_masks/", f"results/annotation_game/{neuron_i}m.zip", f"{neuron_i}m")
+
+
+    # Deleting an non-empty folder
+    shutil.rmtree(f"results/annotation_game/{neuron_i}_filenames/", ignore_errors=True)
+    shutil.rmtree(f"results/annotation_game/{neuron_i}_masks/", ignore_errors=True)

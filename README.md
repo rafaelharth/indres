@@ -1,13 +1,14 @@
-# Understanding Individual Neurons of resnet
+# Understanding Individual Neurons of ResNet Through Improved Compositional Formulas
 
 This file contains instructions to setup and run the program. It assumes you work under Linux; I can make no guarantees that anything will works under Windows.
 
 ## Setup Instructions
 
-1. Download Broden dataset with `./script/dlbroden.sh` (You can comment out downloading 227 if you're not going to probe alexnet)
+1. Download Broden dataset with `./script/dlbroden.sh`.
 2. Run `./script/dlzoo_example.sh` to download `resnet18` trained on `places365`.
-3. Configure settings in `settings.py`. All settings are documented.
-4. Run `python main.py` to generate results in `results/` (the output folder name is printed when you run).
+3. Ensure necessary dependencies; you should be able to clone an environment from environment.yml without complications.
+4. Configure settings in `settings.py`. All settings are documented. The current settings replicate the results up to formula length 3. Set GPU to false if none is available.
+5. Run `python main.py` to generate results in `results/` (the output folder name is printed when you run).
 
 The `results/` directory contains the following files:
 - `inspected_neurons.mmap`: the neuron activations across all images
@@ -19,13 +20,6 @@ The `results/` directory contains the following files:
   - The folder `images_{L}_{U}`
   - `history_{L}_{U}.txt` (see `jumpstart/__init__.py`)
   - The file `results_{L}_{U}.csv` which is a small table containing the essential results for these settings
-
-
-
-
-## Dependencies
-
-See `environment.yml`. You should be able to create an environment from the file without further configuration.
 
 ## Credit
 

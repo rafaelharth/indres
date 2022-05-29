@@ -108,11 +108,14 @@ def get_neuron_values(model):
     if not os.path.exists(filename_shape) or not os.path.exists(filename_neuron_activations):
         compute_neuron_values()
 
+
     print("Returning neuron values from disk")
     neuron_activations_shape = np.load(filename_shape)
     S.n_images = neuron_activations_shape[0]
     S.n_neurons = neuron_activations_shape[1]
     S.mask_shape = (neuron_activations_shape[2], neuron_activations_shape[3])
     S.n_pixels = S.n_images * S.mask_shape[0] * S.mask_shape[1]
+
+    print(f"images {S.n_images}, neurons {S.n_neurons}, mask {S.mask_shape}, pixels {S.n_pixels}")
 
     return np.memmap(filename_neuron_activations, dtype=np.float32, mode="c", shape=(S.n_neurons, S.n_images, *S.mask_shape))

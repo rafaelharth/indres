@@ -8,6 +8,8 @@ import formulas.utils as FU
 import formulas.parser as Parser
 import loaders.mask_loader as MaskLoader
 import settings
+import util.information_printer as PI
+import score_calculator as ScoreCalculator
 
 def partial_imroun(map_im_2_neuron_mask, map_im_2_label_mask, indices=None):
     """ Computes the normalized ImRoU_r score, with r = settings.MULTIPLIER_IP. """
@@ -36,8 +38,8 @@ def partial_imroun(map_im_2_neuron_mask, map_im_2_label_mask, indices=None):
     max_imrou_score = (neuron_area_total - (r / I) * max_random_intersection_total) / neuron_area_total
 
 
-    return imrou_score / max_imrou_score
-    # return imrou_score
+    # return imrou_score / max_imrou_score
+    return imrou_score
 
 def compute_scores(map_n_im_2_activations, neuron_i, formula_string, threshold, indices):
     if settings.EASY_MODE:
@@ -55,10 +57,11 @@ def compute_scores(map_n_im_2_activations, neuron_i, formula_string, threshold, 
 
     score = partial_imroun(neuron_masks, label_masks, None)
     abridged_score = partial_imroun(neuron_masks, label_masks, indices)
+    iou = ScoreCalculator.iou(neuron_masks, label_masks)
     # abridged_score = score
 
-    # PI.show_simple(f"Neuron {neuron_i} || score = {score:.4f} (abr={abridged_score}), score = {score:.3f},"
-    #                f" th = {threshold:.3f} ({description}), formulas = {formula.to_str()}.")
+    PI.show_simple(f"Neuron {neuron_i} || score = {score:.4f} || iou = {iou},"
+                   f" th = {threshold:.3f} (), formulas = {formula.to_str()}.")
     return score, abridged_score
 
 

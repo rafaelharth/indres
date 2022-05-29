@@ -11,17 +11,18 @@ import formulas.formula as F
 # ----------------------------
 # - Most important settings: -
 # ----------------------------
-NEURONS = range(0, 512)
-OPERATOR_SET = [F.Or, F.And, F.AndNot]
-# OPERATOR_SET = [F.Or, F.And, F.AndNot, F.With, F.Close]
-# SCORE_FUNCTION_OPTIMIZATION = "imrou"
-SCORE_FUNCTION_OPTIMIZATION = "iou"
-SCORE_FUNCTION_REPORT = "iou"
+
+# Current settings are for replicating results from the paper at formula length 3.
+NEURONS = list(range(512))
+# OPERATOR_SET = [F.Or, F.And, F.AndNot]
+OPERATOR_SET = [F.Or, F.And, F.AndNot, F.With, F.Close]
+SCORE_FUNCTION_OPTIMIZATION = "imroun" # either iou or imroun is recommended
+SCORE_FUNCTION_REPORT = "imroun"
 N_BEAMSEARCH_CANDIDATES = 50 # 40-50 is recommended if you care about the quality of results
 BEAM_SIZE = 4 # 4 or more is recommended
-MAX_FORMULA_LENGTH = 1
+MAX_FORMULA_LENGTH = 3
 MANUAL_DOWNSAMPLING = True # I think Manual Downsampling creates higher quality masks but it's more expensive
-EXPANSIONS = False
+EXPANSIONS = True
 JUMPSTART = False
 DYNAMIC_THRESHOLDS = False
 PRINT_INFORMATION = True
@@ -31,16 +32,16 @@ EASY_MODE = False
 # ---------------------------------
 # - Next most important settings: -
 # ---------------------------------
-MULTIPLIER_IP = 0.75 # Empirically, .75 seems very reasonable. 1 is definitely too high. 0.5 does seem too low.
-EXPANSION_THRESHOLD = 3 # 2 had higher coverages which I don't like. 4+ it will probably make the score worse; 1 is out of the question.
+MULTIPLIER_IP = 0.75 # the r in imrou_r. Empirically, .75 seems very reasonable. 1 is definitely too high. 0.5 does seem too low.
+EXPANSION_THRESHOLD = 3 # regulates EXPAND operator. 2 had higher coverages which I don't like. 4+ it will probably make the score worse; 1 is out of the question.
 DOWNSAMPLING_THRESHOLD = 100 # While 16*16/2 = 118, to me 100 feels intuitively better when looking at masks and it leads to higher scores
 IGNORE_RELATIVE_COVERAGE_THRESHOLD = 0.0001 # all formulas with coverage less than this are ignored outright. Should be correspondingly low
 ABORT_CLOSE_FORMULAS = True # Settings for early abortion. This decreases runtime by about half.
-CUTOFF_SAMPLES = 4000 # There is probably a way to compute this and the next value along with probability guarantees using statistical
-CUTOFF_SCORE = 0.5 #      methods. However, this is very hard (what's the variance of our RVs?), so I looked at some sample results instead.
-PARALLEL = 1  # Number of processes that are running beam search concurrently. Probably should equal the number of cores on the machine.
+CUTOFF_SAMPLES = 4000 # There is probably a way to compute this and the next value along with probability guarantees using statistical methods. However, this is
+CUTOFF_SCORE = 0.5 #       very hard (what's the variance of our RVs?), so I looked at some sample results instead, yielding 4000 / 0.5 as reasonable values
+PARALLEL = 8  # Number of processes that are running beam search concurrently. Probably should equal the number of cores on the machine.
 UPDATE_THRESHOLDS_IMMEDIATELY = True # - This & next 3 only relevant if DYNAMIC_THRESHOLDS is True -
-STARTING_THRESHOLD = 2
+STARTING_THRESHOLD = 2 # three now deprecated options for dynamic thresholds
 THRESHOLD_STEP = 0.1
 THRESHOLD_MIN_IMPROVEMENT = 0.0001
 
@@ -118,21 +119,21 @@ THRESHOLD_MIN_IMPROVEMENT = 0.0001
 # - m  = minus               -- S -- IoR   -
 # ------------------------------------------
 
-COMPLEXITY_PENALTY = 0.001
+COMPLEXITY_PENALTY = 0.001 # miniscule penalty for long formulas
 
 # Beam search params
 EXTRA_LOW_PENALTY_LABELS = 0 # Number of additional labels (technically primitive formulas), computed without penalty, for the initial beam
 
 QUANTILE = 0.005  # Compute static thresholds according to this quantile
 
-GPU = True  # ImE, this doesn't make a lot of difference because only a very small part of the runtime goes into running the model
+GPU = False  # ImE, this doesn't make a lot of difference because only a very small part of the runtime goes into running the model
 INDEX_FILE = "index_ade20k.csv"  # Which index file to use? If _sm, use test mode
 CLEAN = False  # set to "True" if you want to clean the temporary large files after generating result
 MODEL = "resnet18"  # only resnet is supported
 
 PROBE_DATASET = "broden"  # currently only broden dataset is supported
 SCORE_THRESHOLD = 0.01  # the threshold such that neurons with scores below it are shown in gray
-TOP_N = 7  # to show top N image with highest activation for each neuron
+SAMPLE_N = 100  # number of images sampled for each neuron
 
 OUTPUT_FOLDER = "" # This is set in init because circular imports problem
 

@@ -108,26 +108,24 @@ def run(map_n_im_2_activations, static_thresholds):
     histories = {}
     map_neuron_i_2_formula_records = {}
 
-    # with mp.Pool(settings.PARALLEL) as pool:
-    with tqdm(total=len(settings.NEURONS), desc="Formula Beam Search") as progress_bar:
-        # for (neuron_i, formula, threshold, formula_records, history) in pool.imap_unordered(beamsearch, settings.NEURONS):
-        for neuron_i in settings.NEURONS:
-            print(f"{c_formulas:.1f} / {c_iou:.1f}")
-            neuron_i, formula, threshold, formula_records, history = beamsearch(neuron_i)
-            histories[neuron_i] = history
-            w_category = formula.to_str(category_namer)
-            map_neuron_i_2_formula_records[neuron_i] = formula_records
+    with mp.Pool(settings.PARALLEL) as pool:
+        with tqdm(total=len(settings.NEURONS), desc="Formula Beam Search") as progress_bar:
+            for (neuron_i, formula, threshold, formula_records, history) in pool.imap_unordered(beamsearch, settings.NEURONS):
+                print(f"{c_formulas:.1f} / {c_iou:.1f}")
+                histories[neuron_i] = history
+                w_category = formula.to_str(category_namer)
+                map_neuron_i_2_formula_records[neuron_i] = formula_records
 
-            records.append({"neuron": neuron_i, "category": w_category, "formula": formula.to_str(), "threshold": f'{threshold:0.1f}'})
+                records.append({"neuron": neuron_i, "category": w_category, "formula": formula.to_str(), "threshold": f'{threshold:0.1f}'})
 
-            progress_bar.update()
+                progress_bar.update()
 
-            if not os.path.exists(f'jumpstart/neurons/{neuron_i}.txt'):
-                with open(f'jumpstart/neurons/{neuron_i}.txt', 'w') as f:
-                    f.write(f"\n\n ||||||| {neuron_i} |||||||")
-                    f.write("\n".join(history))
+                if not os.path.exists(f'jumpstart/neurons/{neuron_i}.txt'):
+                    with open(f'jumpstart/neurons/{neuron_i}.txt', 'w') as f:
+                        f.write(f"\n\n ||||||| {neuron_i} |||||||")
+                        f.write("\n".join(history))
 
-    # pool.join()
+    pool.join()
     records = sorted(records, key=(lambda R: R["neuron"]))
     tally_df = pd.DataFrame(records)
     tally_df.to_csv(path_results, index=False)
@@ -224,7 +222,7 @@ def beamsearch(neuron_i):
         formulas = {}
 
         for p_formula in g["pos_p_formulas"]:
-            print(p_formula)
+            # print(p_formula)
             if isinstance(p_formula, F.Expand) and MetaData.categories[MetaData.map_label_2_max_coverage_c_i[p_formula.val.val]] == 'scene':
                 continue # We do not need expanded scenes
 
@@ -353,7 +351,7 @@ def beamsearch(neuron_i):
     # ------------------------------------------------------------------------------------------------------------------------------------
     beam_search_candidates, beam, formula_length = try_parsing_jumpstart_file()
 
-    # all the runtime is from here--
+    # all the runtime up to the real beamsearch is from here--
     if beam is None or beam_search_candidates is None:
         formulas_w_pos_score = compute_formulas_w_positive_score()
         if not formulas_w_pos_score:
@@ -487,9 +485,9 @@ def beamsearch(neuron_i):
                         formula_records.append((formula.to_str(), score))
 
 
-                    # ---------------------------------------------------------------------------------
-                    # - Delete all of the "close masks; we don't have enough RAM to keep them around. -
-                    # ---------------------------------------------------------------------------------
+                    # ----------------------------------------------------------------------------------
+                    # - Delete all of the "close masks"; we don't have enough RAM to keep them around. -
+                    # ----------------------------------------------------------------------------------
                     if close_masks is not None:
                         for close_formula in close_masks:
                             if close_formula is not None:

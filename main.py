@@ -6,6 +6,7 @@ The main method -- execute this to run the program. First creates necessary dire
 
 import os
 
+import S
 import score_calculator as ScoreCalculator
 import formulas.formula as F
 import formulas.utils as FU
@@ -24,7 +25,7 @@ import util.util as Util
 # -------------------------------------------------------------------------------------------------------------
 settings.init()
 L, R = min(settings.NEURONS), max(settings.NEURONS)
-Util.create_directories(['results', settings.OUTPUT_FOLDER, os.path.join(settings.OUTPUT_FOLDER, f"images_{L}_{R}"), "jumpstart/neurons"])
+Util.create_directories(['results', settings.OUTPUT_FOLDER, os.path.join(settings.OUTPUT_FOLDER, f"images_{L}_{R}"), "jumpstart", "jumpstart/neurons"])
 
 
 
@@ -54,6 +55,7 @@ static_thresholds = util.util.compute_static_thresholds(map_n_im_2_activations)
 # - If settings.EASY_MODE is True, the init function of the mask loader will require these two parameters, so we only call it now. -
 # ----------------------------------------------------------------------------------------------------------------------------------
 MaskLoader.init(map_n_im_2_activations, static_thresholds)
+
 
 
 # ------------------------------

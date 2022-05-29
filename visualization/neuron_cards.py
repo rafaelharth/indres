@@ -28,7 +28,7 @@ RED_TINT = np.array([MG * 255, -MG * 255, -MG * 255])
 
 
 
-def create(R, inspected_neurons, image_width=130):
+def create(R, inspected_neurons, image_width=300):
     def add_colored_masks(img_, label_mask_, neuron_mask_):
         img_ = img_.astype(np.int64)
 
@@ -43,6 +43,18 @@ def create(R, inspected_neurons, image_width=130):
         img_ = np.clip(img_, 0, 255).astype(np.uint8)
 
         return img_
+
+    def add_colored_neuron_mask(img_, neuron_mask_):
+        img_ = img_.astype(np.int64)
+
+        neuron_mask_ = neuron_mask_[:, :, np.newaxis] * RED_TINT
+        neuron_mask_ = np.round(neuron_mask_).astype(np.int64)
+        img_ += neuron_mask_
+
+        img_ = np.clip(img_, 0, 255).astype(np.uint8)
+
+        return img_
+
 
     def map_image_i_to_index_in_original_array(dense_index):
         hits_in_original_array = 0
@@ -70,9 +82,9 @@ def create(R, inspected_neurons, image_width=130):
     formula = Parser.parse(R["formula"])
 
 
-    row1fns = [f"{images_name}/{neuron_i:04d}-{i}.jpg" for i in range(settings.TOP_N)]
-    row2fns = [f"{images_name}/{neuron_i:04d}-maskimg-{i}.jpg" for i in range(settings.TOP_N)]
-    row3fns = [f"{images_name}/{neuron_i:04d}-masksource-{i}.jpg" for i in range(settings.TOP_N)]
+    row1fns = [f"{images_name}/{neuron_i:04d}-{i}.jpg" for i in range(settings.SAMPLE_N)]
+    row2fns = [f"{images_name}/{neuron_i:04d}-maskimg-{i}.jpg" for i in range(settings.SAMPLE_N)]
+    row3fns = [f"{images_name}/{neuron_i:04d}-masksource-{i}.jpg" for i in range(settings.SAMPLE_N)]
 
     coverage = lambda mask: mask.sum() / (S.n_images * S.mask_shape[0] * S.mask_shape[1])
     label_masks = FU.compute_composite_mask(formula, neuron_i=(neuron_i if settings.EASY_MODE else None))
@@ -104,11 +116,16 @@ def create(R, inspected_neurons, image_width=130):
     indices_with_nonzero_label_activations = np.where(label_tallies > 0)[0]
 
     Is = list(np.intersect1d(indices_with_nonzero_neuron_activations, indices_with_nonzero_label_activations))
+    # Is = list(indices_with_nonzero_neuron_activations[0])
+    # Is = list(range(500, 600))
+    # Is = [18142, 7001, 15635, 2477, 573, 547, 19377, 16129, 3089]
+
     try:
-        random_subset_of_indices = Util.sample_with_duplicates_if_necessary(Is, settings.TOP_N)
+        random_subset_of_indices = Util.sample_with_duplicates_if_necessary(Is, settings.SAMPLE_N)
     except ValueError:
         print(label_tallies.shape, "", neuron_tallies.shape)
         sys.exit(3)
+    # random_subset_of_indices = [8594, 3486, 19461, 21204, 11178,5331, 13614, 11773, 12971]
 
 
     label_masks_resized = [None] * len(random_subset_of_indices)
@@ -128,7 +145,7 @@ def create(R, inspected_neurons, image_width=130):
 
         label_mask = label_masks[random_image_i]  # shape=(7,7)
         neuron_activations = inspected_neurons[neuron_i][random_image_i]
-        neuron_mask = neuron_activations > threshold # shape=(7,7)
+        neuron_mask = neuron_activations > threshold  # shape=(7,7)
 
         score = settings.SCORE_FUNCTION_REPORT(np.array([neuron_mask]), np.array([label_mask]))
         score = ScoreCalculator.apply_complexity_penalty(score, len(formula))
@@ -142,7 +159,7 @@ def create(R, inspected_neurons, image_width=130):
         Image.fromarray(img_masked).save(os.path.join(settings.OUTPUT_FOLDER, row1fns[picture_i]))
 
         img_html = f'<img loading="eager" src="{row1fns[picture_i]}" height="{image_width}">'
-        html.append(HTMLCommon.wrap_image(img_html, infos=[f"{score:.3f} / {iou:.3f}"]))
+        html.append(HTMLCommon.wrap_image(img_html, infos=[f"{score:.3f} / {iou:.3f} / id {random_image_i}"]))
     html.append("</div>")
 
 
