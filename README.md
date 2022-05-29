@@ -1,6 +1,8 @@
 # Understanding Individual Neurons of ResNet Through Improved Compositional Formulas
 
-This file contains instructions to setup and run the program. It assumes you work under Linux; I can make no guarantees that anything will works under Windows.
+## Extended Results
+
+If you just want to look at non-cherry picked results, check out the .html files under results/. FL indicates formula length, and close/standard indicates whether the algorithm is using the new set of connectors. The browser may take a few seconds to load the files because of the large number of images.
 
 ## Setup Instructions
 
