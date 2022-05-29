@@ -1,0 +1,1339 @@
+
+
+ ||||||| 7 |||||||
+
+ ||||||| 4 |||||||
+
+ ||||||| 3 |||||||
+
+ ||||||| 1 |||||||
+
+ ||||||| 6 |||||||
+
+ ||||||| 5 |||||||
+
+ ||||||| 2 |||||||
+
+ ||||||| 0 |||||||
+
+ ||||||| 13 |||||||
+
+ ||||||| 8 |||||||
+
+ ||||||| 12 |||||||
+
+ ||||||| 14 |||||||
+
+ ||||||| 9 |||||||
+
+ ||||||| 10 |||||||
+
+ ||||||| 21 |||||||
+
+ ||||||| 18 |||||||
+
+ ||||||| 20 |||||||
+
+ ||||||| 16 |||||||
+
+ ||||||| 19 |||||||
+
+ ||||||| 17 |||||||
+
+ ||||||| 22 |||||||
+
+ ||||||| 23 |||||||
+
+ ||||||| 26 |||||||
+
+ ||||||| 24 |||||||
+
+ ||||||| 27 |||||||
+
+ ||||||| 25 |||||||
+
+ ||||||| 29 |||||||
+
+ ||||||| 31 |||||||
+
+ ||||||| 28 |||||||
+
+ ||||||| 30 |||||||
+
+ ||||||| 33 |||||||
+
+ ||||||| 34 |||||||
+
+ ||||||| 32 |||||||
+
+ ||||||| 35 |||||||
+
+ ||||||| 37 |||||||
+
+ ||||||| 36 |||||||
+
+ ||||||| 38 |||||||
+
+ ||||||| 39 |||||||
+
+ ||||||| 40 |||||||
+
+ ||||||| 43 |||||||
+
+ ||||||| 41 |||||||
+
+ ||||||| 42 |||||||
+
+ ||||||| 44 |||||||
+
+ ||||||| 46 |||||||
+
+ ||||||| 45 |||||||
+
+ ||||||| 48 |||||||
+
+ ||||||| 49 |||||||
+
+ ||||||| 50 |||||||
+
+ ||||||| 47 |||||||
+
+ ||||||| 51 |||||||
+
+ ||||||| 52 |||||||
+
+ ||||||| 54 |||||||
+
+ ||||||| 53 |||||||
+
+ ||||||| 56 |||||||
+
+ ||||||| 55 |||||||
+
+ ||||||| 58 |||||||
+
+ ||||||| 57 |||||||
+
+ ||||||| 59 |||||||
+
+ ||||||| 60 |||||||
+
+ ||||||| 62 |||||||
+
+ ||||||| 63 |||||||
+
+ ||||||| 61 |||||||
+
+ ||||||| 65 |||||||
+
+ ||||||| 66 |||||||
+
+ ||||||| 68 |||||||
+
+ ||||||| 64 |||||||
+
+ ||||||| 67 |||||||
+
+ ||||||| 69 |||||||
+
+ ||||||| 70 |||||||
+
+ ||||||| 74 |||||||
+
+ ||||||| 71 |||||||
+
+ ||||||| 73 |||||||
+
+ ||||||| 72 |||||||
+
+ ||||||| 75 |||||||
+
+ ||||||| 76 |||||||
+
+ ||||||| 79 |||||||
+
+ ||||||| 77 |||||||
+
+ ||||||| 81 |||||||
+
+ ||||||| 85 |||||||
+
+ ||||||| 83 |||||||
+
+ ||||||| 84 |||||||
+
+ ||||||| 87 |||||||
+
+ ||||||| 88 |||||||
+
+ ||||||| 90 |||||||
+
+ ||||||| 15 |||||||
+
+Neuron #15 has candidate set:
+-----------------------------
+operating room-s, bed-X, hospital room-s, bed, cradle-X, nursery-s, bedroom-s, cradle, dentists office-s, stretcher-X, 
+childs room-s, footboard-X, stretcher, bathroom-s, drawer-X, footboard, drawer, chest of drawers-X, equipment-X, attic-s, pillow-X, 
+wall-X, cabinet, cabinet-X, pillow, wall, chest of drawers, poolroom-home-s, pool table-X, headboard-X, bathtub-X, curtain-X, 
+table, wardrobe-X, table-X, headboard, brown-c-X, floor-X, door-X, toilet-X, game room-s, brown-c, pink-c-X, bathtub, grey-c-X, 
+equipment, hotel room-s, door, home office-s, grey-c, 
+-----------------------------
+
+
+ ||||||| 11 |||||||
+
+Neuron #11 has candidate set:
+-----------------------------
+person, person-X, booth-indoor-s, reception-s, market-outdoor-s, pedestal-X, counter-X, flower-X, pedestal, sales booth-X, 
+airport terminal-s, gas station-s, flower, banquet hall-s, signboard-X, market-indoor-s, florist shop-indoor-s, counter, black-c-X, 
+airport ticket counter-s, leg-X, black-c, apparel-X, apparel, sales booth, podium-indoor-s, clothing store-s, leg, red-c-X, red-c, 
+firing range-outdoor-s, partition-X, signboard, art studio-s, martial arts gym-s, auto showroom-s, fire station-s, ballroom-s, 
+art gallery-s, head-X, elevator-interior-s, wall-X, text-X, checkout counter-s, van-X, box-X, cardroom-s, table-X, 
+driving range-outdoor-s, florist shop-outdoor-s, 
+-----------------------------
+
+
+ ||||||| 93 |||||||
+
+ ||||||| 94 |||||||
+
+ ||||||| 95 |||||||
+
+ ||||||| 96 |||||||
+
+ ||||||| 97 |||||||
+
+ ||||||| 98 |||||||
+
+ ||||||| 99 |||||||
+
+ ||||||| 100 |||||||
+
+ ||||||| 101 |||||||
+
+ ||||||| 102 |||||||
+
+ ||||||| 103 |||||||
+
+ ||||||| 104 |||||||
+
+ ||||||| 105 |||||||
+
+ ||||||| 106 |||||||
+
+ ||||||| 107 |||||||
+
+ ||||||| 108 |||||||
+
+ ||||||| 86 |||||||
+
+Neuron #86 has candidate set:
+-----------------------------
+house, building, house-X, building-X, building facade-s, roof-X, industrial park-s, apartment building-outdoor-s, roof, person, 
+person-X, bank-outdoor-s, street-s, road-X, sky-X, house-s, blue-c-X, office building-s, village-s, white-c-X, library-outdoor-s, 
+grey-c-X, grey-c, banquet hall-s, purple-c-X, windowpane-X, beach house-s, mansion-s, pink-c-X, earth-X, village-X, white-c, 
+blue-c, manufactured home-s, campus-s, garage door-X, skyscraper-s, black-c-X, pink-c, hangar-outdoor-s, town house-s, 
+loading dock-s, mountain-X, windowpane, skyscraper, skyscraper-X, convenience store-outdoor-s, inn-outdoor-s, student residence-s, 
+purple-c, 
+-----------------------------
+
+
+ ||||||| 110 |||||||
+
+ ||||||| 78 |||||||
+
+Neuron #78 has candidate set:
+-----------------------------
+plant-X, plant, hedge-X, topiary garden-s, hedge, hedge maze-s, green-c, green-c-X, formal garden-s, tree, tree-X, field-X, 
+field-cultivated-s, grass-X, castle-s, field, vineyard-s, rock-X, vineyard-X, flower-X, botanical garden-s, rock, house-X, grass, 
+cottage garden-s, vineyard, yard-s, house, path-X, coast-s, flower, greenhouse-indoor-s, hill-s, sea-X, islet-s, cottage-s, bush-X, 
+bush, roof-X, cemetery-s, driveway-s, ruin-s, zen garden-s, japanese garden-s, earth-X, oast house-s, island-X, sea, yellow-c-X, 
+roof, 
+-----------------------------
+
+
+ ||||||| 111 |||||||
+
+ ||||||| 113 |||||||
+
+ ||||||| 114 |||||||
+
+ ||||||| 80 |||||||
+
+Neuron #80 has candidate set:
+-----------------------------
+highway-s, runway-X, arrival gate-outdoor-s, airport-s, runway, bridge-X, sky-X, bridge, sky, road-X, blue-c-X, plane-X, runway-s, 
+water tower-s, mosque-outdoor-s, blue-c, water tower-X, plane, control tower-outdoor-s, building-X, sea-X, lift bridge-s, road, 
+parking lot-s, tower-X, ship-X, skyscraper-s, grey-c-X, water tower, building, amusement park-s, freeway-s, roundabout-s, grey-c, 
+industrial area-s, white-c-X, sand-X, boat-X, tower, air base-s, ship, nuclear power plant-outdoor-s, aircraft carrier-X, white-c, 
+construction site-s, sea, harbor-s, skyscraper-X, hill-X, mosque-X, 
+-----------------------------
+
+
+ ||||||| 115 |||||||
+
+ ||||||| 89 |||||||
+
+Neuron #89 has candidate set:
+-----------------------------
+mountain-X, mountain, waterfall-X, waterfall, mountain-s, valley-s, waterfall-fan-s, skyscraper, mountain snowy-s, skyscraper-X, 
+apartment building-outdoor-s, creek-s, waterfall-block-s, skyscraper-s, water-X, river-X, rock-X, village-s, hill-X, blue-c-X, 
+water, waterfall-cascade-s, canyon-s, river, cliff-X, building, blue-c, rock, mountain path-s, building-X, hill, sky-X, 
+mountain road-s, butte-s, river-s, lake-natural-s, swimming pool-X, ski resort-s, balcony-X, tree-X, green-c-X, hill-s, 
+swimming pool, valley-X, hotel-outdoor-s, field-X, street-s, forest-needleleaf-s, ice-X, balcony, 
+-----------------------------
+
+
+ ||||||| 91 |||||||
+
+Neuron #91 has candidate set:
+-----------------------------
+grass-X, grass, tent-X, pasture-s, tent, field-X, field, bed, campsite-s, bed-X, earth-X, earth, casino-indoor-s, green-c-X, 
+green-c, barn-s, junkyard-s, hotel room-s, yellow-c-X, cow-X, carpet, park-s, yellow-c, ranch-s, carpet-X, chicken coop-outdoor-s, 
+fence-X, cow, cemetery-s, savanna-s, playground-s, red-c-X, field-wild-s, corral-s, tree-X, volleyball court-outdoor-s, bedroom-s, 
+field-cultivated-s, red-c, hayfield-s, headboard-X, henhouse-X, orange-c, orange-c-X, corn field-s, fence, henhouse, floor, 
+barnyard-s, animal-X, 
+-----------------------------
+
+
+ ||||||| 82 |||||||
+
+Neuron #82 has candidate set:
+-----------------------------
+skyscraper-X, skyscraper, skyscraper-s, computer-X, home theater-s, black-c, television studio-s, computer, black-c-X, monitor-X, 
+screen-X, monitor, grandstand-X, screen, building, stage-X, building-X, music studio-s, parking garage-outdoor-s, grandstand, 
+television-X, television, booth-indoor-s, stage, crt screen-X, movie theater-indoor-s, seat-X, curtain-X, silver screen-X, 
+windowpane-X, windowpane, building facade-s, office-s, curtain, house, pedestal-X, house-X, crt screen, downtown-s, gate-X, 
+purple-c-X, limousine interior-s, subway interior-s, reception-s, person-X, counter-X, stage-indoor-s, cockpit-s, 
+television camera-X, silver screen, 
+-----------------------------
+
+
+ ||||||| 120 |||||||
+
+ ||||||| 92 |||||||
+
+Neuron #92 has candidate set:
+-----------------------------
+highway-s, bridge-X, bridge, road-X, aqueduct-X, viaduct-s, car-X, road, car, bridge-s, aqueduct, field-X, hill-X, aqueduct-s, bed, 
+bed-X, pool table-X, sky-X, field, viaduct-X, pool table, barn-s, clouds-X, pasture-s, cabinet-X, kitchen-s, blue-c-X, river-X, 
+poolroom-home-s, signboard-X, book-X, grass-X, tree-X, sky, green-c-X, freeway-s, river, coast-s, hill, clouds, skyscraper-X, 
+viaduct, street-s, building-X, field-wild-s, blue-c, river-s, hill-s, book, creek-s, 
+-----------------------------
+
+
+ ||||||| 112 |||||||
+
+Neuron #112 has candidate set:
+------------------------------
+table-X, table, conference room-s, chair-X, dining room-s, chair, top-X, top, back-X, swivel chair-X, dinette-home-s, back, 
+swivel chair, classroom-s, orange-c-X, orange-c, red-c-X, brown-c-X, windowpane-X, yellow-c-X, brown-c, red-c, yellow-c, kitchen-s, 
+buffet-X, wall-X, desk-X, kitchen island-X, windowpane, pool table-X, armchair-X, flower, floor-X, flower-X, kitchen island, desk, 
+black-c-X, wall, pink-c-X, poolroom-home-s, bistro-indoor-s, cabinet-X, seat-X, pink-c, purple-c-X, buffet, pool table, 
+reading room-s, black-c, armchair, 
+------------------------------
+
+
+ ||||||| 123 |||||||
+
+ ||||||| 109 |||||||
+
+Neuron #109 has candidate set:
+------------------------------
+art gallery-s, painting-X, painting, museum-indoor-s, art studio-s, arcade machine-X, arcade machine, poster-X, art school-s, 
+poster, wall-X, amusement arcade-s, drawing-X, wall, person-X, drawing, waiting room-s, sculpture-X, person, aquarium-X, 
+artists loft-s, yellow-c-X, aquarium, toyshop-s, home theater-s, corridor-s, board-X, white-c-X, orange-c-X, brown-c-X, rock-X, 
+yellow-c, pedestal-X, pink-c-X, brown-c, silver screen-X, rock, silver screen, sculpture, white-c, orange-c, pink-c, board, 
+amusement park-s, game room-s, television studio-s, catacomb-s, purple-c-X, playroom-s, case-X, 
+------------------------------
+
+
+ ||||||| 124 |||||||
+
+ ||||||| 125 |||||||
+
+ ||||||| 127 |||||||
+
+ ||||||| 126 |||||||
+
+ ||||||| 128 |||||||
+
+ ||||||| 129 |||||||
+
+ ||||||| 130 |||||||
+
+ ||||||| 131 |||||||
+
+ ||||||| 133 |||||||
+
+ ||||||| 132 |||||||
+
+ ||||||| 134 |||||||
+
+ ||||||| 135 |||||||
+
+ ||||||| 136 |||||||
+
+ ||||||| 138 |||||||
+
+ ||||||| 137 |||||||
+
+ ||||||| 116 |||||||
+
+Neuron #116 has candidate set:
+------------------------------
+palm-X, roundabout-s, bayou-s, tree-X, palm, tree, park-s, grass-X, green-c-X, highway-s, golf course-s, green-c, sky-X, house-X, 
+water-X, volleyball court-outdoor-s, grass, house, sky, parking lot-s, water, river-X, road-X, building-X, flood-s, street-s, 
+fairway-s, ballroom-s, plant-X, military hut-s, building, black-c-X, blue-c-X, person-X, earth-X, field-X, bush-X, mountain-X, 
+fence-X, river, river-s, pasture-s, car-X, terraces-X, grey-c-X, person, white-c-X, black-c, lighthouse-s, boat-X, 
+------------------------------
+
+
+ ||||||| 139 |||||||
+
+ ||||||| 140 |||||||
+
+ ||||||| 117 |||||||
+
+Neuron #117 has candidate set:
+------------------------------
+airplane cabin-s, attic-s, seat-X, ceiling-X, headboard-X, hotel room-s, headboard, wall-X, bed-X, seat, wall, ceiling, bedroom-s, 
+reception-s, orange-c-X, bed, mirror-X, person-X, waterfall-block-s, waterfall-X, mirror, pink-c-X, lamp-X, pink-c, orange-c, 
+purple-c-X, yellow-c, yellow-c-X, waterfall, lamp, person, parking garage-indoor-s, pillow-X, kitchen-s, pillow, cabinet-X, 
+counter-X, purple-c, galley-s, brown-c-X, hot spring-s, lobby-s, grey-c-X, brown-c, red-c-X, grey-c, white-c-X, bathroom-s, 
+cushion-X, cushion, 
+------------------------------
+
+
+ ||||||| 141 |||||||
+
+ ||||||| 142 |||||||
+
+ ||||||| 143 |||||||
+
+ ||||||| 121 |||||||
+
+Neuron #121 has candidate set:
+------------------------------
+park-s, tree, tree-X, forest-broadleaf-s, campus-s, building, building-X, street-s, forest path-s, green-c-X, green-c, 
+forest road-s, botanical garden-s, gazebo-exterior-s, covered bridge-exterior-s, grass-X, forest-needleleaf-s, orchard-s, 
+parking lot-s, formal garden-s, plant-X, building facade-s, grey-c-X, house-X, grey-c, black-c-X, fountain-s, path-X, river-s, 
+house, driveway-s, black-c, playground-s, crosswalk-s, bandstand-X, yellow-c, yellow-c-X, pink-c-X, white-c-X, 
+apartment building-outdoor-s, embassy-s, plant, car-X, sky-X, fence-X, alley-s, pink-c, quadrangle-s, grass, balcony-X, 
+------------------------------
+
+
+ ||||||| 144 |||||||
+
+ ||||||| 146 |||||||
+
+ ||||||| 145 |||||||
+
+ ||||||| 147 |||||||
+
+ ||||||| 148 |||||||
+
+ ||||||| 149 |||||||
+
+ ||||||| 151 |||||||
+
+ ||||||| 150 |||||||
+
+ ||||||| 153 |||||||
+
+ ||||||| 152 |||||||
+
+ ||||||| 154 |||||||
+
+ ||||||| 155 |||||||
+
+ ||||||| 156 |||||||
+
+ ||||||| 159 |||||||
+
+ ||||||| 160 |||||||
+
+ ||||||| 157 |||||||
+
+ ||||||| 158 |||||||
+
+ ||||||| 162 |||||||
+
+ ||||||| 161 |||||||
+
+ ||||||| 163 |||||||
+
+ ||||||| 165 |||||||
+
+ ||||||| 164 |||||||
+
+ ||||||| 169 |||||||
+
+ ||||||| 167 |||||||
+
+ ||||||| 168 |||||||
+
+ ||||||| 166 |||||||
+
+ ||||||| 170 |||||||
+
+ ||||||| 172 |||||||
+
+ ||||||| 171 |||||||
+
+ ||||||| 174 |||||||
+
+ ||||||| 173 |||||||
+
+ ||||||| 175 |||||||
+
+ ||||||| 176 |||||||
+
+ ||||||| 177 |||||||
+
+ ||||||| 119 |||||||
+
+Neuron #119 has candidate set:
+------------------------------
+sidewalk-X, sidewalk, railroad train-X, pier-X, bridge-X, platform-X, path-X, railroad train, railway-X, pier, road-X, street-s, 
+path, road, bridge, water-X, platform, railway, bridge-s, runway-X, subway station-platform-s, alley-s, footbridge-X, water, 
+deck-X, grey-c, floor, train station-outdoor-s, grey-c-X, skyscraper, skyscraper-X, floor-X, footbridge, deck, earth-X, runway, 
+building-X, tracks-X, baggage claim-s, black-c-X, railing-X, earth, fence-X, black-c, building, skyscraper-s, tracks, white-c-X, 
+ship-X, arrival gate-outdoor-s, 
+------------------------------
+
+
+ ||||||| 178 |||||||
+
+ ||||||| 179 |||||||
+
+ ||||||| 182 |||||||
+
+ ||||||| 181 |||||||
+
+ ||||||| 183 |||||||
+
+ ||||||| 118 |||||||
+
+Neuron #118 has candidate set:
+------------------------------
+skyscraper-X, skyscraper, skyscraper-s, castle-s, building-X, building, downtown-s, sky-X, oast house-s, blue-c-X, sky, tower-s, 
+freeway-s, blue-c, street-s, white-c-X, white-c, amusement park-s, purple-c-X, black-c-X, tower-X, church-outdoor-s, purple-c, 
+grey-c-X, house-X, house, roof-X, black-c, highway-s, building complex-s, tree-X, grey-c, bridge-X, bridge-s, river-X, tower, roof, 
+windmill-s, park-s, campus-s, air base-s, rubble-s, cathedral-outdoor-s, kasbah-s, tree, moat-water-s, abbey-s, roundabout-s, 
+snow-X, chimney-X, 
+------------------------------
+
+
+ ||||||| 184 |||||||
+
+ ||||||| 186 |||||||
+
+ ||||||| 180 |||||||
+
+ ||||||| 185 |||||||
+
+ ||||||| 187 |||||||
+
+ ||||||| 188 |||||||
+
+ ||||||| 189 |||||||
+
+ ||||||| 190 |||||||
+
+ ||||||| 191 |||||||
+
+ ||||||| 193 |||||||
+
+ ||||||| 194 |||||||
+
+ ||||||| 196 |||||||
+
+ ||||||| 192 |||||||
+
+ ||||||| 197 |||||||
+
+ ||||||| 198 |||||||
+
+ ||||||| 195 |||||||
+
+ ||||||| 200 |||||||
+
+ ||||||| 199 |||||||
+
+ ||||||| 201 |||||||
+
+ ||||||| 204 |||||||
+
+ ||||||| 203 |||||||
+
+ ||||||| 205 |||||||
+
+ ||||||| 202 |||||||
+
+ ||||||| 207 |||||||
+
+ ||||||| 206 |||||||
+
+ ||||||| 208 |||||||
+
+ ||||||| 209 |||||||
+
+ ||||||| 211 |||||||
+
+ ||||||| 212 |||||||
+
+ ||||||| 214 |||||||
+
+ ||||||| 210 |||||||
+
+ ||||||| 216 |||||||
+
+ ||||||| 217 |||||||
+
+ ||||||| 218 |||||||
+
+ ||||||| 219 |||||||
+
+ ||||||| 220 |||||||
+
+ ||||||| 222 |||||||
+
+ ||||||| 223 |||||||
+
+ ||||||| 224 |||||||
+
+ ||||||| 225 |||||||
+
+ ||||||| 226 |||||||
+
+ ||||||| 227 |||||||
+
+ ||||||| 229 |||||||
+
+ ||||||| 228 |||||||
+
+ ||||||| 230 |||||||
+
+ ||||||| 231 |||||||
+
+ ||||||| 232 |||||||
+
+ ||||||| 233 |||||||
+
+ ||||||| 234 |||||||
+
+ ||||||| 235 |||||||
+
+ ||||||| 237 |||||||
+
+ ||||||| 236 |||||||
+
+ ||||||| 238 |||||||
+
+ ||||||| 241 |||||||
+
+ ||||||| 239 |||||||
+
+ ||||||| 240 |||||||
+
+ ||||||| 242 |||||||
+
+ ||||||| 243 |||||||
+
+ ||||||| 245 |||||||
+
+ ||||||| 246 |||||||
+
+ ||||||| 244 |||||||
+
+ ||||||| 247 |||||||
+
+ ||||||| 248 |||||||
+
+ ||||||| 249 |||||||
+
+ ||||||| 250 |||||||
+
+ ||||||| 251 |||||||
+
+ ||||||| 253 |||||||
+
+ ||||||| 254 |||||||
+
+ ||||||| 252 |||||||
+
+ ||||||| 255 |||||||
+
+ ||||||| 256 |||||||
+
+ ||||||| 257 |||||||
+
+ ||||||| 258 |||||||
+
+ ||||||| 259 |||||||
+
+ ||||||| 260 |||||||
+
+ ||||||| 261 |||||||
+
+ ||||||| 263 |||||||
+
+ ||||||| 262 |||||||
+
+ ||||||| 264 |||||||
+
+ ||||||| 265 |||||||
+
+ ||||||| 266 |||||||
+
+ ||||||| 267 |||||||
+
+ ||||||| 268 |||||||
+
+ ||||||| 269 |||||||
+
+ ||||||| 270 |||||||
+
+ ||||||| 271 |||||||
+
+ ||||||| 272 |||||||
+
+ ||||||| 273 |||||||
+
+ ||||||| 274 |||||||
+
+ ||||||| 275 |||||||
+
+ ||||||| 276 |||||||
+
+ ||||||| 277 |||||||
+
+ ||||||| 278 |||||||
+
+ ||||||| 280 |||||||
+
+ ||||||| 279 |||||||
+
+ ||||||| 281 |||||||
+
+ ||||||| 282 |||||||
+
+ ||||||| 283 |||||||
+
+ ||||||| 284 |||||||
+
+ ||||||| 285 |||||||
+
+ ||||||| 287 |||||||
+
+ ||||||| 286 |||||||
+
+ ||||||| 288 |||||||
+
+ ||||||| 289 |||||||
+
+ ||||||| 290 |||||||
+
+ ||||||| 291 |||||||
+
+ ||||||| 292 |||||||
+
+ ||||||| 293 |||||||
+
+ ||||||| 294 |||||||
+
+ ||||||| 295 |||||||
+
+ ||||||| 296 |||||||
+
+ ||||||| 297 |||||||
+
+ ||||||| 298 |||||||
+
+ ||||||| 299 |||||||
+
+ ||||||| 300 |||||||
+
+ ||||||| 301 |||||||
+
+ ||||||| 302 |||||||
+
+ ||||||| 303 |||||||
+
+ ||||||| 304 |||||||
+
+ ||||||| 305 |||||||
+
+ ||||||| 306 |||||||
+
+ ||||||| 307 |||||||
+
+ ||||||| 308 |||||||
+
+ ||||||| 309 |||||||
+
+ ||||||| 310 |||||||
+
+ ||||||| 312 |||||||
+
+ ||||||| 311 |||||||
+
+ ||||||| 314 |||||||
+
+ ||||||| 313 |||||||
+
+ ||||||| 315 |||||||
+
+ ||||||| 316 |||||||
+
+ ||||||| 317 |||||||
+
+ ||||||| 318 |||||||
+
+ ||||||| 319 |||||||
+
+ ||||||| 320 |||||||
+
+ ||||||| 322 |||||||
+
+ ||||||| 321 |||||||
+
+ ||||||| 323 |||||||
+
+ ||||||| 324 |||||||
+
+ ||||||| 325 |||||||
+
+ ||||||| 326 |||||||
+
+ ||||||| 327 |||||||
+
+ ||||||| 328 |||||||
+
+ ||||||| 329 |||||||
+
+ ||||||| 330 |||||||
+
+ ||||||| 331 |||||||
+
+ ||||||| 332 |||||||
+
+ ||||||| 333 |||||||
+
+ ||||||| 335 |||||||
+
+ ||||||| 334 |||||||
+
+ ||||||| 336 |||||||
+
+ ||||||| 338 |||||||
+
+ ||||||| 337 |||||||
+
+ ||||||| 340 |||||||
+
+ ||||||| 339 |||||||
+
+ ||||||| 341 |||||||
+
+ ||||||| 342 |||||||
+
+ ||||||| 343 |||||||
+
+ ||||||| 344 |||||||
+
+ ||||||| 346 |||||||
+
+ ||||||| 345 |||||||
+
+ ||||||| 347 |||||||
+
+ ||||||| 348 |||||||
+
+ ||||||| 349 |||||||
+
+ ||||||| 350 |||||||
+
+ ||||||| 351 |||||||
+
+ ||||||| 352 |||||||
+
+ ||||||| 353 |||||||
+
+ ||||||| 354 |||||||
+
+ ||||||| 355 |||||||
+
+ ||||||| 356 |||||||
+
+ ||||||| 357 |||||||
+
+ ||||||| 358 |||||||
+
+ ||||||| 359 |||||||
+
+ ||||||| 360 |||||||
+
+ ||||||| 361 |||||||
+
+ ||||||| 362 |||||||
+
+ ||||||| 363 |||||||
+
+ ||||||| 364 |||||||
+
+ ||||||| 365 |||||||
+
+ ||||||| 366 |||||||
+
+ ||||||| 367 |||||||
+
+ ||||||| 368 |||||||
+
+ ||||||| 369 |||||||
+
+ ||||||| 370 |||||||
+
+ ||||||| 371 |||||||
+
+ ||||||| 372 |||||||
+
+ ||||||| 373 |||||||
+
+ ||||||| 374 |||||||
+
+ ||||||| 375 |||||||
+
+ ||||||| 376 |||||||
+
+ ||||||| 377 |||||||
+
+ ||||||| 378 |||||||
+
+ ||||||| 379 |||||||
+
+ ||||||| 380 |||||||
+
+ ||||||| 381 |||||||
+
+ ||||||| 382 |||||||
+
+ ||||||| 383 |||||||
+
+ ||||||| 385 |||||||
+
+ ||||||| 384 |||||||
+
+ ||||||| 386 |||||||
+
+ ||||||| 387 |||||||
+
+ ||||||| 388 |||||||
+
+ ||||||| 389 |||||||
+
+ ||||||| 390 |||||||
+
+ ||||||| 391 |||||||
+
+ ||||||| 392 |||||||
+
+ ||||||| 393 |||||||
+
+ ||||||| 395 |||||||
+
+ ||||||| 394 |||||||
+
+ ||||||| 396 |||||||
+
+ ||||||| 397 |||||||
+
+ ||||||| 399 |||||||
+
+ ||||||| 398 |||||||
+
+ ||||||| 400 |||||||
+
+ ||||||| 401 |||||||
+
+ ||||||| 402 |||||||
+
+ ||||||| 403 |||||||
+
+ ||||||| 404 |||||||
+
+ ||||||| 405 |||||||
+
+ ||||||| 406 |||||||
+
+ ||||||| 407 |||||||
+
+ ||||||| 408 |||||||
+
+ ||||||| 409 |||||||
+
+ ||||||| 410 |||||||
+
+ ||||||| 411 |||||||
+
+ ||||||| 412 |||||||
+
+ ||||||| 413 |||||||
+
+ ||||||| 414 |||||||
+
+ ||||||| 415 |||||||
+
+ ||||||| 417 |||||||
+
+ ||||||| 419 |||||||
+
+ ||||||| 418 |||||||
+
+ ||||||| 416 |||||||
+
+ ||||||| 420 |||||||
+
+ ||||||| 422 |||||||
+
+ ||||||| 423 |||||||
+
+ ||||||| 421 |||||||
+
+ ||||||| 424 |||||||
+
+ ||||||| 425 |||||||
+
+ ||||||| 427 |||||||
+
+ ||||||| 426 |||||||
+
+ ||||||| 428 |||||||
+
+ ||||||| 429 |||||||
+
+ ||||||| 430 |||||||
+
+ ||||||| 431 |||||||
+
+ ||||||| 433 |||||||
+
+ ||||||| 432 |||||||
+
+ ||||||| 434 |||||||
+
+ ||||||| 435 |||||||
+
+ ||||||| 436 |||||||
+
+ ||||||| 437 |||||||
+
+ ||||||| 438 |||||||
+
+ ||||||| 439 |||||||
+
+ ||||||| 442 |||||||
+
+ ||||||| 440 |||||||
+
+ ||||||| 441 |||||||
+
+ ||||||| 443 |||||||
+
+ ||||||| 444 |||||||
+
+ ||||||| 445 |||||||
+
+ ||||||| 446 |||||||
+
+ ||||||| 447 |||||||
+
+ ||||||| 448 |||||||
+
+ ||||||| 449 |||||||
+
+ ||||||| 450 |||||||
+
+ ||||||| 451 |||||||
+
+ ||||||| 452 |||||||
+
+ ||||||| 453 |||||||
+
+ ||||||| 454 |||||||
+
+ ||||||| 455 |||||||
+
+ ||||||| 456 |||||||
+
+ ||||||| 457 |||||||
+
+ ||||||| 458 |||||||
+
+ ||||||| 459 |||||||
+
+ ||||||| 460 |||||||
+
+ ||||||| 461 |||||||
+
+ ||||||| 462 |||||||
+
+ ||||||| 463 |||||||
+
+ ||||||| 464 |||||||
+
+ ||||||| 465 |||||||
+
+ ||||||| 466 |||||||
+
+ ||||||| 468 |||||||
+
+ ||||||| 467 |||||||
+
+ ||||||| 469 |||||||
+
+ ||||||| 470 |||||||
+
+ ||||||| 471 |||||||
+
+ ||||||| 472 |||||||
+
+ ||||||| 473 |||||||
+
+ ||||||| 474 |||||||
+
+ ||||||| 475 |||||||
+
+ ||||||| 477 |||||||
+
+ ||||||| 478 |||||||
+
+ ||||||| 476 |||||||
+
+ ||||||| 479 |||||||
+
+ ||||||| 480 |||||||
+
+ ||||||| 481 |||||||
+
+ ||||||| 483 |||||||
+
+ ||||||| 482 |||||||
+
+ ||||||| 484 |||||||
+
+ ||||||| 485 |||||||
+
+ ||||||| 486 |||||||
+
+ ||||||| 487 |||||||
+
+ ||||||| 488 |||||||
+
+ ||||||| 489 |||||||
+
+ ||||||| 491 |||||||
+
+ ||||||| 490 |||||||
+
+ ||||||| 492 |||||||
+
+ ||||||| 493 |||||||
+
+ ||||||| 494 |||||||
+
+ ||||||| 495 |||||||
+
+ ||||||| 496 |||||||
+
+ ||||||| 497 |||||||
+
+ ||||||| 498 |||||||
+
+ ||||||| 499 |||||||
+
+ ||||||| 500 |||||||
+
+ ||||||| 501 |||||||
+
+ ||||||| 502 |||||||
+
+ ||||||| 503 |||||||
+
+ ||||||| 504 |||||||
+
+ ||||||| 505 |||||||
+
+ ||||||| 506 |||||||
+
+ ||||||| 507 |||||||
+
+ ||||||| 508 |||||||
+
+ ||||||| 509 |||||||
+
+ ||||||| 510 |||||||
+
+ ||||||| 122 |||||||
+
+Neuron #122 has candidate set:
+------------------------------
+zen garden-s, earth, earth-X, desert-sand-s, sidewalk, road, sidewalk-X, sand, sand-X, road-X, carpet, path-X, carpet-X, 
+labyrinth-X, manhole-s, temple-east asia-s, path, labyrinth-outdoor-s, labyrinth, rock-X, hayfield-s, grey-c, floor, temple-X, 
+rock, grey-c-X, temple, floor-X, forecourt-X, desert-X, field-X, pink-c, pink-c-X, straw-X, field, sea, sea-X, alley-s, 
+waiting room-s, forest-needleleaf-s, forecourt, bed, oasis-s, desert, bed-X, straw, orange-c, mountain snowy-s, river-X, 
+driveway-s, 
+------------------------------
+
+
+ ||||||| 221 |||||||
+
+Neuron #221 has candidate set:
+------------------------------
+grass, grass-X, golf course-s, fairway-s, pool table-X, green-c, green-c-X, pool table, park-s, field-X, field, poolroom-home-s, 
+lawn-s, castle-s, tree-X, pasture-s, driving range-outdoor-s, baseball field-s, tree, courthouse-s, campus-s, playground-s, 
+gazebo-exterior-s, yellow-c-X, poolroom-establishment-s, pitch-X, yellow-c, abbey-s, farm-s, field-wild-s, plant-X, house-X, pitch, 
+water tower-s, quadrangle-s, earth-X, football field-s, control tower-outdoor-s, earth, yard-s, valley-s, house, moat-dry-s, 
+fence-X, embankment-X, windmill-s, path-X, hill-s, baptistry-outdoor-s, mansion-s, 
+------------------------------
+
+
+ ||||||| 213 |||||||
+
+Neuron #213 has candidate set:
+------------------------------
+building facade-s, house, building, house-X, building-X, balcony-X, balcony, apartment building-outdoor-s, awning-X, railing-X, 
+general store-outdoor-s, bow window-outdoor-s, balcony-exterior-s, casino-outdoor-s, shopfront-s, skyscraper-X, shop window-X, 
+bank-outdoor-s, skyscraper-s, construction site-s, railing, black-c-X, skyscraper, office building-s, windowpane-X, scaffolding-X, 
+awning, black-c, chalet-s, shop window, hunting lodge-outdoor-s, library-outdoor-s, windowpane, inn-outdoor-s, stairs-X, column-X, 
+double door-X, industrial area-s, scaffolding, courthouse-s, movie theater-outdoor-s, double door, porch-X, doorway-outdoor-s, 
+roof-X, windows-X, pane-X, embassy-s, street-s, grey-c-X, 
+------------------------------
+
+
+ ||||||| 215 |||||||
+
+Neuron #215 has candidate set:
+------------------------------
+bed-X, headboard-X, bed, headboard, bedroom-s, hotel room-s, pillow-X, pillow, cushion-X, cushion, alley-s, curtain-X, 
+jacuzzi-indoor-s, curtain, windowpane-X, windowpane, orange-c-X, galley-s, orange-c, wall-X, living room-s, dinette-vehicle-s, 
+home theater-s, brown-c-X, wall, red-c-X, pink-c-X, sofa-X, yard-s, painting-X, pink-c, brown-c, house-X, yellow-c-X, windmill-s, 
+building, building-X, house, white-c-X, windmill-X, red-c, painting, fireplace-X, sofa, yellow-c, hot tub-X, pool table-X, table-X, 
+windmill, white-c, 
+------------------------------
+
+
+ ||||||| 511 |||||||
+
+Neuron #511 has candidate set:
+------------------------------
+car-X, car, building, building-X, street-s, auto showroom-s, apartment building-outdoor-s, office building-s, hospital-s, 
+garage-indoor-s, parking garage-indoor-s, student residence-s, parking garage-outdoor-s, tree-X, grass-X, tree, green-c-X, house, 
+balcony-X, windowpane-X, house-X, autobus-X, black-c-X, golf course-s, fairway-s, windowpane, road-X, autobus, green-c, grey-c-X, 
+black-c, carport-freestanding-s, balcony, gas station-s, palm-X, hotel-outdoor-s, grass, parking lot-s, building facade-s, plant-X, 
+service station-X, grey-c, windows-X, white-c-X, library-outdoor-s, roundabout-s, car dealership-s, fire station-s, 
+service station, plant, 
+------------------------------
+
+
+
+For neuron 511 at formula length 1, the beam is
+-----------------------------------------------
+car-X, s=0.0433/th=5.1, building, s=0.0272/th=5.1, street-s, s=0.0222/th=5.1, auto showroom-s, s=0.0221/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.022095179233621413
+
+
+For neuron 511 at formula length 2, the beam is
+-----------------------------------------------
+(building CLOSE TO car), s=0.0626/th=5.1, (building CLOSE TO road-X), s=0.0568/th=5.1, 
+(building CLOSE car), s=0.0564/th=5.1, (building CLOSE TO tree), s=0.0525/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.05245040034227721
+
+
+For neuron 511 at formula length 3, the beam is
+-----------------------------------------------
+(building CLOSE TO tree & road-X), s=0.0792/th=5.1, ((building CLOSE TO road-X) WITH tree-X), s=0.0751/th=5.1, 
+((building CLOSE TO road-X) WITH green-c-X), s=0.0744/th=5.1, ((building CLOSE TO car) WITH tree-X), s=0.0710/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.07104639752087397
+
+
+For neuron 511 at formula length 4, the beam is
+-----------------------------------------------
+((building CLOSE TO tree & road-X) OR auto showroom-s), s=0.0831/th=5.1, 
+((building CLOSE TO tree & road-X) OR hospital-s), s=0.0813/th=5.1, 
+(((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X), s=0.0811/th=5.1, 
+((building CLOSE TO tree & road-X) WITH grey-c-X), s=0.0810/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.08103787591849042
+
+
+For neuron 511 at formula length 5, the beam is
+-----------------------------------------------
+(((building CLOSE TO tree & road-X) OR auto showroom-s) CLOSE TO grey-c-X), s=0.0859/th=5.1, 
+((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s), s=0.0858/th=5.1, 
+(((building CLOSE TO tree & road-X) OR auto showroom-s) WITH grey-c-X), s=0.0853/th=5.1, 
+((building CLOSE TO tree & road-X) OR auto showroom-s OR hospital-s), s=0.0850/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.0849777094542654
+
+
+For neuron 511 at formula length 6, the beam is
+-----------------------------------------------
+(((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s) CLOSE TO grey-c-X), s=0.0889/th=5.1, 
+((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s), s=0.0886/th=5.1, 
+((((building CLOSE TO tree & road-X) OR auto showroom-s) CLOSE TO grey-c-X) OR hospital-s), s=0.0883/th=5.1, 
+(((building CLOSE TO tree & road-X) OR auto showroom-s OR hospital-s) CLOSE TO grey-c-X), s=0.0883/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.08832127613397896
+
+
+For neuron 511 at formula length 7, the beam is
+-----------------------------------------------
+(((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s OR hospital-s) CLOSE TO grey-c-X), s=0.0911/th=5.1, 
+((((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s) CLOSE TO grey-c-X) OR hospital-s), s=0.0911/th=5.1, 
+(((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s OR student residence-s) CLOSE TO grey-c-X), s=0.0905/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s) CLOSE TO grey-c-X), s=0.0904/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.09037937641525788
+
+
+For neuron 511 at formula length 8, the beam is
+-----------------------------------------------
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s) CLOSE TO grey-c-X), s=0.0939/th=5.1, 
+(((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s OR hospital-s OR student residence-s) CLOSE TO grey-c-X), s=0.0926/th=5.1, 
+((((building CLOSE TO tree & road-X) OR auto showroom-s OR office building-s OR student residence-s) CLOSE TO grey-c-X) OR hospital-s), s=0.0926/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR student residence-s) CLOSE TO grey-c-X), s=0.0922/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.09216417031302514
+
+
+For neuron 511 at formula length 9, the beam is
+-----------------------------------------------
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR student residence-s) CLOSE TO grey-c-X), s=0.0955/th=5.1, 
+((((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s) CLOSE TO grey-c-X) OR student residence-s), s=0.0948/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s) CLOSE TO (grey-c-X OR plant-X)), s=0.0944/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR parking garage-outdoor-s) CLOSE TO grey-c-X), s=0.0944/th=5.1, 
+-----------------------------------------------
+
+Neuron #511: worst score=0.0943600158667188
+
+
+For neuron 511 at formula length 10, the beam is
+------------------------------------------------
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR student residence-s) CLOSE TO (grey-c-X OR plant-X)), s=0.0959/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR student residence-s OR parking garage-outdoor-s) CLOSE TO grey-c-X), s=0.0958/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR student residence-s) CLOSE TO (grey-c-X OR hotel-outdoor-s)), s=0.0958/th=5.1, 
+(((((building CLOSE TO road-X) WITH tree-X) CLOSE TO green-c-X) OR auto showroom-s OR hospital-s OR office building-s OR student residence-s OR service station) CLOSE TO grey-c-X), s=0.0958/th=5.1, 
+------------------------------------------------
