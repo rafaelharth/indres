@@ -1,0 +1,513 @@
+neuron,category,formula,threshold
+0,(object-X OR object-X OR object),(counter-X OR bar-X OR work surface),5.1
+1,((object CLOSE TO part-X) OR object),((building CLOSE TO shop window-X) OR pantry),5.0
+2,((object-X CLOSE TO color) OR object-X),((sea-X CLOSE TO green-c) OR lake-X),4.6
+3,((object-X OR object-X) CLOSE object-X),((silver screen-X OR stage-X) CLOSE wall-X),4.6
+4,(object CLOSE TO (part-X OR scene)),(building CLOSE TO (column-X OR courthouse-s)),5.4
+5,(object-X OR object-X OR object-X),(toilet-X OR box-X OR rubbish-X),4.4
+6,(object OR object-X OR object-X),(tent OR bandstand-X OR dome-X),4.8
+7,(object-X OR scene OR scene),(vineyard-X OR orchard-s OR corn field-s),3.7
+8,((object CLOSE TO object-X) OR object),((plant CLOSE TO wall-X) OR greenhouse),4.6
+9,((object AND color) OR object),((grass AND green-c) OR ball),4.4
+10,((scene AND object-X) CLOSE TO color-X),((highway-s AND road-X) CLOSE TO blue-c-X),4.4
+11,((object AND color-X) OR part-X),((person AND black-c-X) OR torso-X),3.5
+12,((object-X AND scene) OR part-X),((table-X AND dining room-s) OR fire escape-X),4.1
+13,((object-X CLOSE object-X) OR object-X),((rock-X CLOSE sea-X) OR canopy-X),4.1
+14,(object-X OR object OR object-X),(fence-X OR grandstand OR ring-X),5.2
+15,((object-X OR object-X) CLOSE TO object-X),((bed-X OR cradle-X) CLOSE TO wall-X),5.4
+16,(object-X OR object-X OR object-X),(windmill-X OR court-X OR ring-X),3.9
+17,((scene AND object-X) CLOSE TO object),((conference room-s AND wall-X) CLOSE TO table),5.3
+18,(object OR object OR object),(car OR badlands OR slot machine),4.3
+19,(object-X OR material-X OR object-X),(case-X OR food-X OR patty-X),4.3
+20,((object OR part-X) CLOSE TO object-X),((house OR roof-X) CLOSE TO tree-X),4.4
+21,(object-X OR object OR part-X),(book-X OR bookcase OR garage door-X),4.3
+22,(object-X OR object-X OR object),(bridge-X OR river-X OR aqueduct),5.4
+23,(object-X CLOSE TO (object-X OR object)),(wall-X CLOSE TO (stove-X OR work surface)),5.2
+24,((object-X AND NOT object) CLOSE object-X),((fireplace-X AND NOT wall) CLOSE wall-X),6.8
+25,((object-X OR scene) AND object-X),((bathtub-X OR corridor-s) AND wall-X),5.0
+26,(object-X OR object-X OR object-X),(pillar-X OR aqueduct-X OR viaduct-X),4.1
+27,(object OR part-X OR object-X),(hovel OR wave-X OR viaduct-X),3.1
+28,(object CLOSE TO (object-X OR scene)),(building CLOSE TO (wall-X OR alley-s)),5.1
+29,(object OR object-X OR part),(house OR porch-X OR balcony),6.2
+30,((object-X AND scene) OR scene),((table-X AND dining room-s) OR balcony-interior-s),5.5
+31,(object-X OR object OR object-X),(pool table-X OR arcade machine OR television camera-X),4.6
+32,((color AND NOT color) OR object),((red-c AND NOT pink-c) OR ring),4.4
+33,(object-X OR object-X OR object-X),(hill-X OR badlands-X OR embankment-X),4.4
+34,(object-X CLOSE TO (object-X OR object-X)),(bed-X CLOSE TO (windowpane-X OR door-X)),5.6
+35,(object-X OR object-X OR object-X),(sand-X OR tent-X OR caravan-X),4.6
+36,(object-X OR object-X OR object-X),(boat-X OR ship-X OR lighthouse-X),4.5
+37,(object-X OR object-X OR object-X),(swivel chair-X OR pillow-X OR machine-X),4.2
+38,(object-X OR object OR object-X),(lighthouse-X OR plane OR bullring-X),3.9
+39,((object-X CLOSE TO part) OR object-X),((bed-X CLOSE TO headboard) OR pool table-X),5.0
+40,(object-X OR object-X OR object),(pool table-X OR controls-X OR instrument panel),4.1
+41,((object CLOSE TO color-X) OR scene),((bed CLOSE TO red-c-X) OR butchers shop-s),3.9
+42,(object CLOSE (part OR object)),(bed CLOSE (headboard OR pillow)),11.4
+43,(object-X OR object OR object-X),(playground-X OR inflatable bounce game OR plaything-X),4.5
+44,(object-X OR object-X OR object-X),(washer-X OR waterfall-X OR trench-X),4.8
+45,(object OR part OR object-X),(house OR roof OR pavilion-X),4.9
+46,(object-X OR object OR object-X),(pool table-X OR washer OR bowling alley-X),4.5
+47,((object-X CLOSE TO part-X) OR object-X),((road-X CLOSE TO crosswalk-X) OR pool table-X),5.0
+48,(object-X OR object-X OR object-X),(sink-X OR toilet-X OR countertop-X),5.4
+49,(object-X CLOSE TO (object OR object-X)),(table-X CLOSE TO (chair OR swivel chair-X)),4.7
+50,(object OR scene OR object),(house OR cemetery-s OR hovel),3.6
+51,(object-X OR object-X OR object),(counter-X OR ticket counter-X OR box office),4.8
+52,(object-X CLOSE TO (object OR object)),(tree-X CLOSE TO (path OR road)),5.3
+53,(object-X OR object-X OR object),(bench-X OR pier-X OR hovel),4.7
+54,((scene OR object) CLOSE object),((airport terminal-s OR building) CLOSE person),4.7
+55,(object-X CLOSE TO (scene OR scene)),(building-X CLOSE TO (kasbah-s OR castle-s)),4.3
+56,((object-X AND scene) OR object-X),((table-X AND dining room-s) OR pool table-X),6.3
+57,(object-X CLOSE (object-X OR scene)),(earth-X CLOSE (person-X OR excavation-s)),4.3
+58,(object-X OR object-X OR object-X),(door-X OR telephone booth-X OR service station-X),4.3
+59,(object-X OR object-X OR object-X),(plane-X OR helicopter-X OR dashboard-X),3.8
+60,(object-X OR object-X OR object-X),(screen door-X OR lockers-X OR elevator door-X),5.2
+61,(object-X OR object-X OR object-X),(plane-X OR helicopter-X OR bridge-X),4.0
+62,((object-X OR object-X) CLOSE TO object),((water-X OR field-X) CLOSE TO tree),4.8
+63,(object OR object-X OR object-X),(person OR track-X OR ring-X),3.8
+64,((object-X CLOSE TO object-X) OR object),((pool table-X CLOSE TO wall-X) OR arcade machine),4.9
+65,(object-X OR part-X OR object-X),(fountain-X OR windows-X OR ice rink-X),4.3
+66,((object-X CLOSE object-X) OR object),((seat-X CLOSE windowpane-X) OR pillow),4.6
+67,((object-X OR object-X) CLOSE TO object-X),((sidewalk-X OR path-X) CLOSE TO tree-X),4.8
+68,((scene OR scene) CLOSE object-X),((classroom-s OR lecture room-s) CLOSE floor-X),4.6
+69,(object OR object OR object),(pool table OR elevator OR elevator door),4.5
+70,(object-X OR object-X OR object-X),(cushion-X OR pillow-X OR ball-X),4.7
+71,((object CLOSE TO object-X) AND color-X),((building CLOSE TO windowpane-X) AND black-c-X),4.5
+72,((object OR object) CLOSE TO color-X),((water OR river) CLOSE TO green-c-X),3.5
+73,((object AND color-X) OR object),((mountain AND blue-c-X) OR railroad train),3.5
+74,((object-X CLOSE TO object-X) OR object),((building-X CLOSE TO grass-X) OR temple),5.1
+75,(object-X OR object-X OR object-X),(fence-X OR grill-X OR runway-X),4.2
+76,(object-X OR object-X OR object-X),(seat-X OR catwalk-X OR washer-X),3.7
+77,(object-X OR object-X OR object-X),(boat-X OR chimney-X OR waterfall-X),3.7
+78,((object OR object-X) AND color-X),((plant OR hedge-X) AND green-c-X),5.0
+79,(object-X OR object-X OR object-X),(shelf-X OR stands-X OR controls-X),3.7
+80,((object-X OR object-X) CLOSE TO object),((runway-X OR road-X) CLOSE TO sky),5.3
+81,(object-X OR object OR object-X),(canopy-X OR temple OR bandstand-X),3.9
+82,(object-X OR object-X OR object-X),(computer-X OR television-X OR crt screen-X),3.6
+83,(object-X OR object-X OR object-X),(case-X OR bar-X OR blackboard-X),3.8
+84,(object OR object OR object-X),(skyscraper OR tent OR escalator-X),4.1
+85,(object OR part-X OR object-X),(house OR balcony-X OR grille door-X),4.8
+86,((object AND color-X) CLOSE TO color-X),((building AND white-c-X) CLOSE TO blue-c-X),3.7
+87,(object-X OR object-X OR scene),(path-X OR dirt track-X OR alley-s),5.2
+88,(object-X OR object-X OR object-X),(fountain-X OR waterfall-X OR hot tub-X),4.7
+89,((object-X CLOSE TO object-X) OR object-X),((mountain-X CLOSE TO sky-X) OR waterfall-X),4.6
+90,(object OR object-X OR object-X),(fence OR carousel-X OR scaffolding-X),4.4
+91,(object-X OR object-X OR object-X),(grass-X OR tent-X OR cow-X),4.2
+92,((object-X AND scene) OR object),((road-X AND highway-s) OR bridge),4.7
+93,(object-X CLOSE TO (object OR object)),(tree-X CLOSE TO (grass OR house)),4.8
+94,(object-X OR part-X OR object-X),(toilet-X OR fire escape-X OR sink-X),4.2
+95,(object-X OR object-X OR part-X),(pool table-X OR sandbox-X OR head-X),3.8
+96,(object-X OR object-X OR object-X),(court-X OR tennis court-X OR pitch-X),5.0
+97,(object-X OR object-X OR object-X),(carousel-X OR bandstand-X OR water tower-X),3.8
+98,(object-X OR object-X OR object),(tower-X OR controls-X OR elevator door),4.0
+99,(object OR object OR object-X),(dome OR tunnel OR arch-X),4.6
+100,((object-X CLOSE object-X) AND scene),((sink-X CLOSE wall-X) AND bathroom-s),4.9
+101,((scene CLOSE object-X) AND object-X),((bathroom-s CLOSE floor-X) AND wall-X),5.0
+102,(object-X CLOSE TO (scene OR scene)),(wall-X CLOSE TO (corridor-s OR subway interior-s)),5.4
+103,(object-X OR object-X OR part-X),(cradle-X OR autobus-X OR fire escape-X),4.6
+104,((object-X WITH color-X) OR object-X),((sea-X WITH blue-c-X) OR waterfall-X),5.0
+105,((object-X CLOSE TO color) OR object),((rock-X CLOSE TO green-c) OR temple),3.6
+106,(object-X OR object-X OR object-X),(grandstand-X OR pitch-X OR bullring-X),4.2
+107,(object OR object-X OR scene),(arcade machine OR plaything-X OR kindergarden classroom-s),5.0
+108,((object-X OR object) AND NOT object-X),((pool table-X OR pitch) AND NOT floor-X),5.1
+109,(object-X OR object-X OR object-X),(painting-X OR drawing-X OR poster-X),4.7
+110,((object-X OR scene) CLOSE TO color-X),((person-X OR greenhouse-indoor-s) CLOSE TO green-c-X),3.8
+111,((object-X AND color-X) OR object),((field-X AND green-c-X) OR autobus),3.9
+112,(object-X CLOSE TO (object-X OR object-X)),(table-X CLOSE TO (chair-X OR swivel chair-X)),8.0
+113,(object-X OR object-X OR object),(escalator-X OR bowling alley-X OR temple),3.9
+114,(object-X OR object-X OR object-X),(plane-X OR helicopter-X OR computer-X),4.9
+115,((object-X AND NOT object) OR object),((earth-X AND NOT earth) OR aquarium),3.5
+116,((object-X OR object-X) CLOSE object-X),((palm-X OR grass-X) CLOSE sky-X),4.4
+117,((scene OR part) CLOSE TO object),((airplane cabin-s OR headboard) CLOSE TO wall),4.3
+118,((object-X OR scene) CLOSE TO object),((skyscraper-X OR oast house-s) CLOSE TO sky),4.4
+119,(object-X OR object-X OR object-X),(sidewalk-X OR pier-X OR railway-X),4.9
+120,(object-X OR object-X OR object-X),(water tower-X OR telephone booth-X OR watchtower-X),4.2
+121,((object AND color-X) CLOSE object),((tree AND grey-c-X) CLOSE building),5.1
+122,((object OR scene) AND color),((earth OR desert-sand-s) AND grey-c),4.8
+123,((object-X CLOSE object-X) OR object-X),((signboard-X CLOSE sky-X) OR service station-X),4.3
+124,((object-X AND scene) CLOSE object-X),((table-X AND dining room-s) CLOSE wall-X),6.4
+125,((object-X CLOSE object-X) OR object-X),((stove-X CLOSE cabinet-X) OR work surface-X),5.6
+126,(object-X OR object OR object),(book-X OR bookcase OR videos),5.0
+127,(object-X OR object-X OR object-X),(shelf-X OR apparel-X OR shirt-X),4.9
+128,(object OR object-X OR object-X),(waterfall OR dam-X OR stage-X),4.0
+129,((object-X OR object) CLOSE object-X),((rock-X OR sand) CLOSE sky-X),4.5
+130,(object-X OR object-X OR object-X),(signboard-X OR trade name-X OR text-X),4.9
+131,(object-X OR object OR object-X),(sofa-X OR bench OR seat-X),4.1
+132,(object-X OR object OR object-X),(court-X OR waterfall OR shirt-X),4.3
+133,(object-X OR object-X OR object-X),(sink-X OR toilet-X OR bathtub-X),5.8
+134,(object-X OR object-X OR object),(flower-X OR ball-X OR inflatable bounce game),3.4
+135,(object-X OR object-X OR object),(tent-X OR swivel chair-X OR seat),4.6
+136,(object-X OR object-X OR object-X),(sink-X OR toilet-X OR water tower-X),5.4
+137,(object AND color-X AND color-X),(building AND black-c-X AND grey-c-X),4.5
+138,(part-X OR scene OR object),(garage door-X OR doorway-outdoor-s OR blind),4.0
+139,((object-X OR object-X) AND NOT scene),((field-X OR windmill-X) AND NOT field-wild-s),4.8
+140,(object OR object-X OR object-X),(skyscraper OR grill-X OR grille door-X),5.0
+141,((object-X AND scene) OR object-X),((table-X AND conference room-s) OR swivel chair-X),4.4
+142,(object OR part-X OR object),(ruins OR fire escape-X OR controls),4.1
+143,(object-X OR object-X OR object-X),(fireplace-X OR altar-X OR chandelier-X),4.8
+144,(object-X OR object-X OR object-X),(ice rink-X OR lockers-X OR minibike-X),3.9
+145,((object-X CLOSE TO object) OR object-X),((counter-X CLOSE TO wall) OR silver screen-X),5.0
+146,((scene OR scene) AND NOT object-X),((shoe shop-s OR art gallery-s) AND NOT ceiling-X),4.0
+147,((scene CLOSE object) OR object-X),((lighthouse-s CLOSE lighthouse) OR water tower-X),4.6
+148,(object-X OR object-X OR object-X),(signboard-X OR case-X OR trade name-X),4.2
+149,((object CLOSE color-X) OR object-X),((mountain CLOSE green-c-X) OR aqueduct-X),4.5
+150,(object-X OR object-X OR object-X),(plane-X OR aircraft carrier-X OR bandstand-X),3.5
+151,(object OR object-X OR object-X),(greenhouse OR escalator-X OR helicopter-X),3.8
+152,(object-X OR object-X OR part-X),(lighthouse-X OR ice-X OR garage door-X),3.7
+153,(object-X CLOSE TO (object-X OR object-X)),(cabinet-X CLOSE TO (oven-X OR dishwasher-X)),6.5
+154,((object CLOSE TO object-X) AND color-X),((mountain CLOSE TO sky-X) AND blue-c-X),4.9
+155,(object-X OR object-X OR object-X),(case-X OR labyrinth-X OR hay-X),4.7
+156,(object-X OR object-X OR object-X),(toilet-X OR controls-X OR instrument panel-X),4.5
+157,(object-X OR object-X OR object-X),(book-X OR coffee table-X OR document-X),4.4
+158,(color AND object-X AND object-X),(white-c AND building-X AND sky-X),4.8
+159,(object-X OR object-X OR object-X),(computer-X OR television camera-X OR controls-X),4.8
+160,(object-X OR object-X OR object),(grandstand-X OR pitch-X OR controls),3.8
+161,(part-X OR object-X OR object-X),(shop window-X OR service station-X OR stands-X),4.9
+162,(object-X OR part-X OR object),(cushion-X OR headboard-X OR pillow),4.2
+163,((scene OR object) CLOSE object-X),((airport terminal-s OR person) CLOSE ceiling-X),4.7
+164,(object OR object-X OR object),(sea OR aircraft carrier-X OR pillow),4.3
+165,((object WITH color-X) OR part),((curtain WITH black-c-X) OR garage door),5.2
+166,((object-X CLOSE object-X) OR object-X),((person-X CLOSE table-X) OR sales booth-X),3.4
+167,(object-X OR object-X OR object-X),(railroad train-X OR railway-X OR tracks-X),3.9
+168,(object OR object OR object),(car OR truck OR lighthouse),4.3
+169,(object OR object OR object),(greenhouse OR grandstand OR labyrinth),4.5
+170,((object-X AND scene) OR object-X),((road-X AND highway-s) OR bullring-X),4.7
+171,((object CLOSE object) AND scene),((building CLOSE car) AND street-s),5.3
+172,(object-X AND object-X AND scene),(road-X AND building-X AND street-s),5.2
+173,(object-X OR object-X OR object),(apparel-X OR shirt-X OR jacket),3.7
+174,(object-X CLOSE TO (scene OR scene)),(table-X CLOSE TO (conference room-s OR classroom-s)),4.5
+175,(object-X OR object-X OR object),(tent-X OR escalator-X OR caravan),3.8
+176,(object-X CLOSE TO (scene OR scene)),(building-X CLOSE TO (castle-s OR moat-water-s)),4.2
+177,(object-X OR object-X OR object-X),(grandstand-X OR animal-X OR bridge-X),3.6
+178,((object AND object-X) OR object-X),((building AND sky-X) OR railing-X),4.4
+179,((object-X CLOSE TO object-X) OR object-X),((wall-X CLOSE TO bench-X) OR altar-X),4.5
+180,((object WITH object-X) OR object),((plant WITH wall-X) OR palm),6.5
+181,((object-X AND scene) CLOSE TO color-X),((tree-X AND street-s) CLOSE TO grey-c-X),5.1
+182,((object-X CLOSE TO object) OR object),((person-X CLOSE TO building) OR animal),4.0
+183,((object-X OR object-X) CLOSE object-X),((cradle-X OR plaything-X) CLOSE wall-X),5.1
+184,(object-X CLOSE TO (scene OR scene)),(chair-X CLOSE TO (dining room-s OR dinette-home-s)),5.0
+185,(object-X OR object OR object-X),(lighthouse-X OR person OR water tower-X),3.0
+186,(object-X OR object OR object-X),(bench-X OR temple OR bandstand-X),3.9
+187,(object-X OR object-X OR object-X),(bench-X OR stairs-X OR altar-X),5.2
+188,((color AND NOT color-X) OR object),((red-c AND NOT orange-c-X) OR inflatable bounce game),3.5
+189,((scene AND object-X) CLOSE TO object),((attic-s AND wall-X) CLOSE TO ceiling),5.6
+190,(object-X OR object-X OR object-X),(swimming pool-X OR fountain-X OR hot tub-X),4.3
+191,((object-X OR object-X) CLOSE TO color),((fireplace-X OR case-X) CLOSE TO brown-c),4.3
+192,(object OR object-X OR object-X),(skyscraper OR lighthouse-X OR water tower-X),4.7
+193,(object-X OR object-X OR object),(cradle-X OR pier-X OR aqueduct),3.7
+194,(object-X OR object OR object-X),(carousel-X OR barrel OR rubbish-X),3.4
+195,(object OR object OR object),(hovel OR cradle OR railing),4.4
+196,(object OR object-X OR object),(house OR cradle-X OR tent),5.0
+197,((object-X OR scene) CLOSE TO object),((pool table-X OR parking garage-indoor-s) CLOSE TO wall),5.2
+198,(part-X OR object OR object-X),(fire escape-X OR bridge OR roller coaster-X),4.3
+199,((object-X AND object-X) OR object-X),((bed-X AND wall-X) OR lighthouse-X),5.5
+200,((scene OR object) CLOSE TO object-X),((corridor-s OR person) CLOSE TO floor-X),3.7
+201,(object-X AND object-X AND scene),(tree-X AND building-X AND street-s),4.7
+202,((object-X OR scene) AND NOT object),((seat-X OR cockpit-s) AND NOT seat),4.1
+203,(object-X OR object OR object),(stairway-X OR escalator OR stairs),5.7
+204,(color-X CLOSE TO (object-X OR object)),(green-c-X CLOSE TO (path-X OR dirt track)),4.7
+205,(object-X OR object OR object-X),(case-X OR shelf OR sales booth-X),3.9
+206,(object OR object-X OR object-X),(washer OR vault-X OR mosque-X),4.6
+207,(object OR object-X OR part-X),(shelf OR book-X OR balcony-X),5.6
+208,(object OR object OR object-X),(person OR truck OR stretcher-X),4.1
+209,((object-X AND object-X) OR part-X),((floor-X AND wall-X) OR seat cushion-X),6.2
+210,(object-X OR object-X OR object),(computer-X OR controls-X OR windmill),4.3
+211,((object-X CLOSE TO object-X) OR object-X),((grass-X CLOSE TO building-X) OR runway-X),4.9
+212,(object-X OR object OR object),(pool table-X OR chandelier OR fan),3.8
+213,(object CLOSE TO (object OR object)),(building CLOSE TO (door OR railing)),4.8
+214,(object-X CLOSE (object-X OR object-X)),(stage-X CLOSE (wall-X OR curtain-X)),4.0
+215,(object-X CLOSE TO (object-X OR object)),(bed-X CLOSE TO (painting-X OR windowpane)),4.4
+216,((object-X CLOSE TO object-X) OR object),((wall-X CLOSE TO toilet-X) OR sink),4.0
+217,(object-X OR object-X OR object),(railway-X OR bowling alley-X OR case),4.5
+218,(object-X OR object-X OR object-X),(plane-X OR horse-X OR helicopter-X),3.8
+219,(object-X CLOSE TO (scene AND NOT object)),(road-X CLOSE TO (highway-s AND NOT road)),7.4
+220,(object OR object OR object),(arcade machine OR pool table OR slot machine),4.5
+221,(object CLOSE TO (object-X AND NOT object-X)),(grass CLOSE TO (tree-X AND NOT grass-X)),6.8
+222,(object OR object OR object-X),(house OR hovel OR windmill-X),4.6
+223,(object OR object-X OR object-X),(house OR bowling alley-X OR pool table-X),3.8
+224,(part-X OR part-X OR part-X),(windows-X OR fire escape-X OR balcony-X),5.4
+225,(object-X CLOSE TO (object-X OR object)),(wall-X CLOSE TO (toilet-X OR bathtub)),5.9
+226,((object-X AND color-X) OR object-X),((earth-X AND brown-c-X) OR dirt track-X),5.0
+227,(object-X OR scene OR object-X),(water tower-X OR shopping mall-indoor-s OR arcade-X),4.4
+228,((scene AND object-X) OR object-X),((airport terminal-s AND wall-X) OR grandstand-X),5.0
+229,(object-X OR object OR object-X),(pool table-X OR ring OR table tennis-X),5.3
+230,(object-X OR object OR object-X),(grandstand-X OR pool table OR stage-X),4.4
+231,(part-X OR object OR object-X),(crosswalk-X OR pitch OR bowling alley-X),3.8
+232,((object AND object-X) OR object-X),((building AND sky-X) OR cradle-X),4.7
+233,(object-X OR object-X OR object-X),(bridge-X OR roller coaster-X OR aqueduct-X),4.7
+234,((object-X OR object-X) CLOSE TO color-X),((desk-X OR shelf-X) CLOSE TO brown-c-X),5.4
+235,(object-X OR object-X OR object-X),(path-X OR pitch-X OR dirt track-X),4.9
+236,(object-X OR object-X OR object),(windmill-X OR lighthouse-X OR tower),3.9
+237,(object-X OR object-X OR scene),(plane-X OR helicopter-X OR orchard-s),3.4
+238,((object-X CLOSE TO object-X) OR object-X),((pool table-X CLOSE TO wall-X) OR horse-X),4.4
+239,(color-X CLOSE TO (object OR scene)),(brown-c-X CLOSE TO (mountain OR kasbah-s)),4.0
+240,(object-X OR object-X OR object-X),(court-X OR tennis court-X OR labyrinth-X),4.3
+241,(object-X OR object-X OR object),(kitchen island-X OR vineyard-X OR counter),4.3
+242,(object-X OR object-X OR object-X),(painting-X OR elevator door-X OR computer-X),5.0
+243,(object CLOSE TO (object OR part)),(wall CLOSE TO (pillow OR drawer)),6.1
+244,((object-X OR object-X) CLOSE TO color-X),((water-X OR river-X) CLOSE TO green-c-X),6.0
+245,((object AND scene) OR object-X),((building AND castle-s) OR shirt-X),4.8
+246,(object-X OR object-X OR object-X),(plane-X OR helicopter-X OR aircraft carrier-X),4.2
+247,(object CLOSE (part OR object)),(bed CLOSE (headboard OR pillow)),7.3
+248,(object CLOSE (part OR part)),(building CLOSE (shop window OR crosswalk)),2.7
+249,(object-X OR object OR object-X),(signboard-X OR arcade machine OR telephone booth-X),3.9
+250,((object-X OR object) AND scene),((sofa-X OR fireplace) AND living room-s),4.8
+251,(object-X OR object-X OR object-X),(toilet-X OR sink-X OR bathtub-X),5.0
+252,(object-X OR object-X OR object-X),(cradle-X OR plaything-X OR patty-X),4.9
+253,((object-X CLOSE object-X) OR part-X),((ceiling-X CLOSE counter-X) OR back pillow-X),4.1
+254,(part-X OR object OR object),(crosswalk-X OR stairway OR labyrinth),4.0
+255,((object-X AND scene) OR object-X),((table-X AND conference room-s) OR dome-X),4.2
+256,(object OR object OR object),(tent OR autobus OR greenhouse),4.1
+257,((scene OR scene) CLOSE color),((alley-s OR medina-s) CLOSE white-c),4.1
+258,(object-X OR object-X OR object),(case-X OR slot machine-X OR arcade machine),3.9
+259,(object-X OR material-X OR object-X),(flower-X OR food-X OR patty-X),5.5
+260,(object-X OR object OR object-X),(playground-X OR telephone booth OR horse-X),3.5
+261,(object-X OR object-X OR object-X),(stove-X OR barrel-X OR bottle-X),3.7
+262,(object-X OR object-X OR object-X),(field-X OR valley-X OR windmill-X),4.2
+263,(object OR object-X OR part),(skyscraper OR toilet-X OR windows),5.6
+264,((object OR object-X) CLOSE TO object),((building OR building-X) CLOSE TO person),4.4
+265,(object-X OR object-X OR object-X),(toilet-X OR sink-X OR pillow-X),4.7
+266,(object-X OR object-X OR object-X),(apparel-X OR shirt-X OR pillow-X),4.2
+267,(scene CLOSE TO object & color),(street-s CLOSE TO sky & brown-c),4.7
+268,((object-X CLOSE TO object-X) OR object),((road-X CLOSE TO tree-X) OR autobus),4.7
+269,((object-X OR object-X) CLOSE TO object),((cradle-X OR ring-X) CLOSE TO wall),4.0
+270,((object-X AND color-X) OR object),((sidewalk-X AND white-c-X) OR sink),4.1
+271,(part-X OR object OR object-X),(screen-X OR arcade machine OR aquarium-X),4.0
+272,(object-X OR object-X OR object-X),(bridge-X OR roller coaster-X OR viaduct-X),5.3
+273,(object-X OR object-X OR object-X),(tent-X OR rubbish-X OR rubble-X),3.3
+274,((object-X CLOSE object-X) OR scene),((grass-X CLOSE rock-X) OR orchard-s),4.7
+275,((object-X OR object-X) CLOSE TO color),((rock-X OR earth-X) CLOSE TO grey-c),4.8
+276,((object-X OR object-X) CLOSE TO color-X),((seat-X OR toilet-X) CLOSE TO grey-c-X),4.1
+277,(object-X OR scene OR object-X),(field-X OR marsh-s OR badlands-X),3.7
+278,((object-X AND object-X) OR object),((earth-X AND tree-X) OR greenhouse),3.7
+279,((object-X OR object) AND color-X),((sea-X OR mountain) AND blue-c-X),3.8
+280,(object-X CLOSE TO (object-X AND NOT object-X)),(road-X CLOSE TO (tree-X AND NOT road-X)),6.5
+281,(part-X OR object-X OR object-X),(shop window-X OR apparel-X OR sales booth-X),4.4
+282,((scene CLOSE object) AND object-X),((street-s CLOSE sky) AND building-X),5.4
+283,((object-X OR object-X) CLOSE TO object-X),((table-X OR desk-X) CLOSE TO windowpane-X),4.7
+284,(object-X OR object-X OR object-X),(grandstand-X OR tennis court-X OR court-X),5.2
+285,((object-X OR object) CLOSE TO object-X),((pool table-X OR coffee table) CLOSE TO wall-X),5.2
+286,((object AND color-X) OR object-X),((plant AND green-c-X) OR vegetables-X),4.3
+287,((object-X OR object) CLOSE object-X),((sea-X OR mountain) CLOSE building-X),4.1
+288,(object-X OR material-X OR object-X),(pool table-X OR food-X OR patty-X),4.8
+289,((object CLOSE TO object-X) AND NOT scene),((mountain CLOSE TO sky-X) AND NOT mountain snowy-s),4.4
+290,((object OR scene) AND color-X),((house OR bar-s) AND brown-c-X),4.1
+291,(object-X OR object-X OR object-X),(animal-X OR cow-X OR dog-X),4.2
+292,(object-X OR object OR object),(book-X OR shelf OR bookcase),4.6
+293,((object-X OR object-X) CLOSE color),((sink-X OR toilet-X) CLOSE grey-c),4.6
+294,((object AND object-X) OR object),((building AND sky-X) OR house),4.7
+295,(object OR object-X OR object),(controls OR instrument panel-X OR slot machine),4.6
+296,(object-X OR object-X OR object-X),(aqueduct-X OR swivel chair-X OR viaduct-X),4.7
+297,(object-X OR object-X OR part),(path-X OR dirt track-X OR garage door),6.4
+298,((color OR scene) AND object-X),((orange-c OR sauna-s) AND wall-X),4.7
+299,((object-X CLOSE object) OR scene),((sofa-X CLOSE coffee table) OR gymnasium-indoor-s),4.7
+300,((object-X OR object) CLOSE object-X),((signboard-X OR car) CLOSE sky-X),4.6
+301,(object-X CLOSE (color-X OR object-X)),(sea-X CLOSE (green-c-X OR railing-X)),4.7
+302,((object OR object-X) CLOSE TO color-X),((mountain OR ice-X) CLOSE TO blue-c-X),4.7
+303,(object-X OR object-X OR object-X),(toilet-X OR sink-X OR merchandise-X),4.7
+304,((object-X OR object-X) AND NOT object),((waterfall-X OR river-X) AND NOT river),4.5
+305,(object-X OR object-X OR object-X),(pool table-X OR plane-X OR helicopter-X),5.8
+306,((scene AND object) OR object),((castle-s AND building) OR ruins),4.5
+307,(object-X OR object OR scene),(bridge-X OR skyscraper OR cloister-indoor-s),4.1
+308,(object-X OR object-X OR object-X),(washer-X OR washing machines-X OR viaduct-X),5.6
+309,(object OR object-X OR scene),(greenhouse OR playground-X OR greenhouse-indoor-s),4.4
+310,(object-X OR object-X OR object-X),(sink-X OR toilet-X OR bathtub-X),8.1
+311,(object-X OR object-X OR object-X),(hovel-X OR horse-X OR animal-X),3.6
+312,((scene CLOSE object-X) OR object-X),((cemetery-s CLOSE tree-X) OR computer-X),4.7
+313,(object-X OR object-X OR object),(tower-X OR water tower-X OR big top),4.0
+314,((object OR scene) CLOSE TO object-X),((skyscraper OR castle-s) CLOSE TO sky-X),4.1
+315,((object-X CLOSE object-X) OR object-X),((car-X CLOSE sky-X) OR railroad train-X),3.9
+316,((object-X CLOSE TO object-X) OR object-X),((wall-X CLOSE TO bench-X) OR lighthouse-X),4.7
+317,(object-X OR object-X OR object),(computer-X OR television-X OR fireplace),5.3
+318,((object-X OR object-X) CLOSE object-X),((stove-X OR oven-X) CLOSE wall-X),5.8
+319,(object-X OR object-X OR object-X),(plane-X OR fountain-X OR carousel-X),4.5
+320,(object OR object OR object-X),(house OR hovel OR gravestone-X),3.8
+321,(object-X OR object OR object-X),(ball-X OR inflatable bounce game OR ice-X),3.3
+322,(object-X OR part-X OR object-X),(court-X OR garage door-X OR tennis court-X),4.8
+323,(object CLOSE TO (color-X AND NOT object)),(mountain CLOSE TO (blue-c-X AND NOT mountain)),3.8
+324,(object OR object OR object-X),(person OR big top OR playground-X),3.2
+325,((object-X CLOSE TO object) OR object-X),((bed-X CLOSE TO painting) OR fireplace-X),5.0
+326,(object-X OR object-X OR object-X),(waterfall-X OR river-X OR lake-X),6.5
+327,(object-X CLOSE TO object & object-X),(building-X CLOSE TO car & tree-X),5.1
+328,(object-X CLOSE TO (object-X AND NOT object)),(pool table-X CLOSE TO (wall-X AND NOT pool table)),5.4
+329,(object OR object OR object-X),(rock OR apparel OR shirt-X),3.8
+330,((object-X AND scene) OR object-X),((table-X AND conference room-s) OR computer-X),3.6
+331,(object-X OR object OR object),(elevator door-X OR tower OR elevator),4.3
+332,(object-X OR object OR scene),(pool table-X OR desert OR ocean-s),4.2
+333,(object-X OR object OR object-X),(stage-X OR tent OR bandstand-X),4.2
+334,((object-X OR object-X) CLOSE TO color-X),((water-X OR river-X) CLOSE TO green-c-X),4.4
+335,((object-X AND object-X) OR object-X),((grass-X AND tree-X) OR horse-X),4.6
+336,(object-X OR object-X OR object-X),(water-X OR pool table-X OR river-X),5.4
+337,((object-X CLOSE object-X) OR object-X),((painting-X CLOSE person-X) OR blackboard-X),4.4
+338,(object-X OR object-X OR object),(ice rink-X OR court-X OR cradle),3.7
+339,(object-X OR object-X OR object-X),(swimming pool-X OR hot tub-X OR pool-X),4.0
+340,(object CLOSE TO (object-X AND NOT object-X)),(sea CLOSE TO (sky-X AND NOT sea-X)),6.8
+341,((color OR part) CLOSE object-X),((yellow-c OR crosswalk) CLOSE road-X),4.7
+342,(object CLOSE TO (object-X OR object-X)),(tree CLOSE TO (grass-X OR field-X)),5.0
+343,((object OR object-X) CLOSE TO color-X),((person OR counter-X) CLOSE TO brown-c-X),5.2
+344,(object OR object-X OR object-X),(autobus OR escalator-X OR railroad train-X),3.9
+345,((object-X OR object-X) CLOSE TO color),((case-X OR bar-X) CLOSE TO brown-c),4.4
+346,(object-X OR object-X OR object-X),(palm-X OR island-X OR carousel-X),3.8
+347,((object OR object-X) CLOSE TO color-X),((mountain OR hill-X) CLOSE TO green-c-X),4.0
+348,(object CLOSE TO (part-X OR object)),(bed CLOSE TO (footboard-X OR windowpane)),3.8
+349,(scene OR object-X OR object-X),(shoe shop-s OR aqueduct-X OR shirt-X),4.3
+350,((object-X CLOSE object-X) AND scene),((sink-X CLOSE wall-X) AND bathroom-s),5.7
+351,(object-X OR object-X OR object),(lighthouse-X OR vineyard-X OR truck),3.7
+352,((object-X AND NOT object) CLOSE object-X),((ceiling-X AND NOT wall) CLOSE floor-X),3.9
+353,(object-X OR object-X OR object-X),(cradle-X OR apparel-X OR shirt-X),4.9
+354,((object-X CLOSE TO object) AND NOT color-X),((tree-X CLOSE TO building) AND NOT green-c-X),4.4
+355,(object-X CLOSE TO (scene OR scene)),(wall-X CLOSE TO (classroom-s OR kindergarden classroom-s)),4.3
+356,(object-X OR object-X OR object),(rock-X OR fountain-X OR animal),4.1
+357,((object-X AND object-X) WITH color-X),((ceiling-X AND wall-X) WITH brown-c-X),4.7
+358,((object-X OR object-X) CLOSE TO object),((cradle-X OR pool table-X) CLOSE TO wall),4.3
+359,(object-X OR object OR object-X),(ice rink-X OR pool table OR bowling alley-X),5.0
+360,((part-X OR object) CLOSE object-X),((crosswalk-X OR person) CLOSE building-X),4.5
+361,((object-X OR object-X) CLOSE TO color),((seat-X OR pedestal-X) CLOSE TO brown-c),3.8
+362,((object AND scene) OR object),((sky AND mountain snowy-s) OR pool table),4.4
+363,((object-X CLOSE object) OR scene),((sand-X CLOSE sea) OR wheat field-s),3.8
+364,((scene AND object-X) OR object),((conference room-s AND table-X) OR greenhouse),4.5
+365,(object OR object-X OR object),(person OR ice rink-X OR telephone booth),4.4
+366,((scene AND object-X) OR object-X),((airport terminal-s AND wall-X) OR signboard-X),4.4
+367,((scene CLOSE object-X) AND object-X),((corridor-s CLOSE floor-X) AND wall-X),4.1
+368,(object-X OR object-X OR object),(windmill-X OR fan-X OR dam),4.4
+369,(object-X OR object OR object),(cradle-X OR railing OR playground),4.4
+370,(object-X OR object-X OR object-X),(plaything-X OR ball-X OR fish-X),2.9
+371,((object-X CLOSE object-X) OR object-X),((cabinet-X CLOSE stove-X) OR washer-X),5.4
+372,(object-X OR object-X OR object-X),(rubbish-X OR rubble-X OR steam shovel-X),3.9
+373,((object AND color-X) OR object-X),((wall AND yellow-c-X) OR bowling alley-X),4.8
+374,(object-X OR object-X OR object-X),(sink-X OR ice rink-X OR countertop-X),4.6
+375,(part-X OR object OR object),(shop window-X OR case OR animal),3.5
+376,(object-X OR object-X OR scene),(toilet-X OR washer-X OR subway interior-s),4.4
+377,(object-X OR object OR part-X),(elevator door-X OR pool table OR garage door-X),3.6
+378,(object-X OR object-X OR object-X),(bridge-X OR aqueduct-X OR viaduct-X),4.8
+379,((object-X OR scene) CLOSE color-X),((swivel chair-X OR gymnasium-indoor-s) CLOSE black-c-X),4.2
+380,(object-X OR object-X OR object),(tent-X OR washer-X OR big top),4.9
+381,((object CLOSE TO color-X) OR object),((house CLOSE TO blue-c-X) OR pool table),4.5
+382,((object OR object-X) CLOSE object-X),((curtain OR canopy-X) CLOSE bed-X),5.5
+383,(object-X OR object-X OR part-X),(washer-X OR bicycle-X OR wheel-X),4.6
+384,(object-X OR object-X OR object-X),(apparel-X OR shirt-X OR jacket-X),5.2
+385,(object-X OR object-X OR object),(autobus-X OR railroad train-X OR truck),3.4
+386,(object OR object-X OR object),(hovel OR shanties-X OR truck),4.0
+387,(object OR object OR object),(curtain OR hovel OR covered bridge),4.2
+388,(object-X CLOSE (object AND NOT color)),(table-X CLOSE (chair AND NOT black-c)),7.0
+389,((scene AND object-X) OR object-X),((castle-s AND building-X) OR lighthouse-X),5.0
+390,((object-X AND object-X) CLOSE TO color-X),((sky-X AND building-X) CLOSE TO blue-c-X),4.5
+391,((object-X AND scene) OR object),((sofa-X AND living room-s) OR cushion),4.4
+392,(object-X OR object-X OR object-X),(swivel chair-X OR animal-X OR ring-X),4.0
+393,((color AND object-X) AND NOT object-X),((white-c AND windowpane-X) AND NOT building-X),4.0
+394,((scene AND object-X) OR object),((attic-s AND wall-X) OR tent),5.8
+395,(object-X OR object-X OR scene),(controls-X OR instrument panel-X OR bus interior-s),3.5
+396,(object-X OR object-X OR object-X),(apparel-X OR shirt-X OR television camera-X),4.2
+397,(object CLOSE TO color & object-X),(windowpane CLOSE TO white-c & wall-X),5.4
+398,(object-X OR part-X OR scene),(escalator-X OR fire escape-X OR elevator shaft-s),3.4
+399,(object-X OR object-X OR object-X),(flower-X OR swimming pool-X OR hot tub-X),5.7
+400,(scene CLOSE TO object & object),(living room-s CLOSE TO sofa & windowpane),6.9
+401,(object CLOSE TO object & color-X),(building CLOSE TO car & white-c-X),4.6
+402,((object-X AND object-X) OR part-X),((road-X AND building-X) OR shop window-X),4.9
+403,(object-X OR object-X OR scene),(sand-X OR tent-X OR desert-sand-s),3.7
+404,((object CLOSE TO color) OR object),((house CLOSE TO black-c) OR hovel),4.1
+405,(object-X OR object-X OR object),(service station-X OR ring-X OR telephone booth),4.1
+406,((object-X CLOSE TO part) OR object-X),((bed-X CLOSE TO headboard) OR embankment-X),4.1
+407,((object-X CLOSE object-X) OR object-X),((toilet-X CLOSE wall-X) OR water tower-X),4.1
+408,((scene CLOSE object-X) AND object-X),((corridor-s CLOSE floor-X) AND wall-X),4.5
+409,((scene OR scene) CLOSE object),((art gallery-s OR ballroom-s) CLOSE floor),5.1
+410,((object OR object-X) CLOSE object),((mountain OR snow-X) CLOSE tree),4.6
+411,((object-X CLOSE TO color) OR object),((bed-X CLOSE TO white-c) OR pillow),5.0
+412,(object-X OR object-X OR object),(pool table-X OR machine-X OR cannon),4.9
+413,(scene OR object OR object-X),(mosque-outdoor-s OR court OR tennis court-X),4.7
+414,(object-X OR object-X OR object-X),(computer-X OR silver screen-X OR stage-X),4.2
+415,(object OR object OR scene),(stairway OR autobus OR pagoda-s),4.0
+416,((object-X OR object-X) CLOSE TO object-X),((sand-X OR palm-X) CLOSE TO sky-X),4.6
+417,(object-X OR object-X OR object-X),(case-X OR bar-X OR pier-X),4.0
+418,((object-X CLOSE TO part) OR object-X),((bed-X CLOSE TO headboard) OR sofa-X),7.5
+419,((object-X AND NOT part-X) CLOSE object-X),((toilet-X AND NOT water tank-X) CLOSE wall-X),5.9
+420,(object-X AND object-X AND scene),(cabinet-X AND wall-X AND kitchen-s),6.3
+421,(object-X OR object-X OR object-X),(seat-X OR computer-X OR instrument panel-X),5.2
+422,(object-X OR object-X OR object-X),(path-X OR dirt track-X OR embankment-X),4.6
+423,(object-X OR object-X OR object-X),(plane-X OR runway-X OR helicopter-X),3.8
+424,(object-X OR object-X OR object-X),(windmill-X OR sculpture-X OR horse-X),3.0
+425,(object-X OR object-X OR object),(cradle-X OR computer-X OR bandstand),4.8
+426,(object-X OR object-X OR object),(case-X OR patty-X OR chandelier),4.1
+427,(object-X OR object-X OR object-X),(helicopter-X OR aircraft carrier-X OR shirt-X),4.1
+428,(color-X CLOSE TO (scene AND NOT object-X)),(grey-c-X CLOSE TO (highway-s AND NOT road-X)),3.6
+429,(object-X OR object OR part-X),(pillow-X OR tent OR headboard-X),4.3
+430,((object AND scene) OR object-X),((table AND conference room-s) OR pool table-X),5.1
+431,(object-X OR object-X OR object-X),(signboard-X OR computer-X OR stretcher-X),4.8
+432,(scene CLOSE TO object & object),(attic-s CLOSE TO ceiling & wall),4.4
+433,(object-X OR object-X OR object-X),(case-X OR umbrella-X OR carousel-X),4.5
+434,(object-X OR object-X OR object),(plane-X OR runway-X OR washer),4.6
+435,((object-X CLOSE color) OR object-X),((bed-X CLOSE pink-c) OR flower-X),4.7
+436,(object-X OR object-X OR object-X),(pool table-X OR swivel chair-X OR television camera-X),4.7
+437,(object-X OR object-X OR object-X),(plane-X OR controls-X OR instrument panel-X),4.7
+438,(color-X CLOSE TO (object-X OR scene)),(black-c-X CLOSE TO (seat-X OR forest-broadleaf-s)),4.0
+439,(part-X OR object-X OR scene),(shop window-X OR case-X OR bank vault-s),3.9
+440,((object CLOSE object-X) AND object-X),((sky CLOSE road-X) AND sky-X),3.5
+441,((scene OR object-X) CLOSE object-X),((warehouse-indoor-s OR car-X) CLOSE ceiling-X),4.2
+442,((object-X CLOSE TO part) OR object),((bed-X CLOSE TO headboard) OR pillow),5.5
+443,((object-X AND scene) OR object-X),((table-X AND dining room-s) OR water tower-X),4.6
+444,object,car,5.8
+445,(object-X OR object OR object-X),(pool table-X OR arcade machine OR table tennis-X),5.4
+446,((object-X AND object-X) OR part-X),((car-X AND building-X) OR shop window-X),6.3
+447,((object CLOSE TO object-X) OR object-X),((car CLOSE TO building-X) OR boat-X),4.7
+448,(object-X CLOSE TO (object OR scene)),(tree-X CLOSE TO (car OR park-s)),4.0
+449,(object CLOSE TO (object AND NOT object-X)),(bed CLOSE TO (floor AND NOT bed-X)),4.8
+450,(object-X OR object-X OR object-X),(windmill-X OR helicopter-X OR net-X),3.9
+451,((object AND color-X) OR object),((tree AND brown-c-X) OR bush),4.3
+452,(object-X OR scene OR object-X),(ice-X OR crevasse-s OR iceberg-X),4.2
+453,((object OR object) AND NOT scene),((car OR van) AND NOT building facade-s),6.1
+454,((object OR object) CLOSE TO color-X),((curtain OR skyscraper) CLOSE TO black-c-X),3.9
+455,((object-X AND scene) CLOSE TO object),((car-X AND street-s) CLOSE TO building),5.1
+456,((object-X CLOSE object-X) OR object),((stove-X CLOSE wall-X) OR washer),6.8
+457,((object-X AND object-X) OR scene),((field-X AND sky-X) OR cloister-indoor-s),4.0
+458,(object-X OR object-X OR object-X),(sea-X OR bridge-X OR river-X),3.8
+459,(object-X OR object-X OR object-X),(bridge-X OR aqueduct-X OR dam-X),4.3
+460,(object-X CLOSE (object-X OR scene)),(person-X CLOSE (earth-X OR sandbox-s)),4.1
+461,(object OR object OR object-X),(tent OR greenhouse OR plaything-X),3.9
+462,((object-X CLOSE object-X) OR object-X),((snow-X CLOSE building-X) OR ice-X),4.7
+463,(object CLOSE TO (object-X OR object-X)),(grass CLOSE TO (road-X OR sidewalk-X)),5.1
+464,((part-X OR object-X) CLOSE object-X),((crosswalk-X OR runway-X) CLOSE road-X),5.9
+465,(object-X OR object-X OR object),(toilet-X OR swivel chair-X OR tent),6.0
+466,((object CLOSE TO object-X) OR object-X),((building CLOSE TO person-X) OR grandstand-X),3.8
+467,(object-X OR object-X OR object-X),(swimming pool-X OR hot tub-X OR pool-X),5.6
+468,(object-X OR scene OR object-X),(net-X OR rope bridge-s OR ring-X),5.0
+469,((object AND color-X) OR object-X),((floor AND yellow-c-X) OR bowling alley-X),4.5
+470,(object OR object-X OR object),(pool table OR television camera-X OR grand piano),3.6
+471,((scene OR scene) CLOSE object),((parking garage-indoor-s OR covered bridge-interior-s) CLOSE floor),4.1
+472,((object AND color-X) OR object),((person AND white-c-X) OR fountain),3.7
+473,((object-X AND NOT object) CLOSE object-X),((cradle-X AND NOT wall) CLOSE wall-X),4.7
+474,(object-X OR part-X OR object-X),(cradle-X OR drawer-X OR lockers-X),4.5
+475,((object AND color-X) OR object-X),((mountain AND brown-c-X) OR acropolis-X),4.3
+476,((object-X OR object-X) CLOSE object-X),((computer-X OR swivel chair-X) CLOSE desk-X),5.8
+477,((object OR object) CLOSE object-X),((skyscraper OR fountain) CLOSE building-X),6.9
+478,((object-X OR scene) CLOSE object-X),((seat-X OR cockpit-s) CLOSE windowpane-X),4.4
+479,(object-X OR scene OR object),(sofa-X OR airplane cabin-s OR stairway),4.6
+480,((object-X CLOSE object-X) OR object-X),((mountain-X CLOSE building-X) OR autobus-X),4.3
+481,((color-X AND object-X) CLOSE object),((green-c-X AND windowpane-X) CLOSE windowpane),4.3
+482,(object-X OR object-X OR object-X),(swivel chair-X OR animal-X OR bullring-X),4.3
+483,((object AND NOT color) OR object),((water AND NOT blue-c) OR river),6.7
+484,((object-X CLOSE TO object) OR part),((sofa-X CLOSE TO windowpane) OR back pillow),5.4
+485,((object CLOSE TO object) AND scene),((building CLOSE TO road) AND street-s),5.0
+486,(object-X OR object-X OR object),(pool table-X OR hot tub-X OR swimming pool),4.4
+487,(object-X OR object-X OR object),(grandstand-X OR stage-X OR bandstand),3.7
+488,(object-X OR object-X OR object-X),(tent-X OR canopy-X OR bandstand-X),4.0
+489,(material-X OR object-X OR object-X),(food-X OR fruit-X OR bottle-X),4.9
+490,(object-X OR object-X OR object-X),(pool table-X OR table tennis-X OR table football-X),5.9
+491,(object OR object OR object-X),(autobus OR truck OR caravan-X),4.2
+492,(object-X OR scene OR object-X),(hovel-X OR cloister-indoor-s OR covered bridge-X),3.3
+493,(object-X OR object-X OR object-X),(animal-X OR skeleton-X OR sculpture-X),3.8
+494,(object-X OR object OR object-X),(toilet-X OR washer OR plane-X),3.9
+495,(object-X OR object-X OR object),(apparel-X OR shirt-X OR cradle),4.4
+496,(object-X OR object OR scene),(seat-X OR ball OR conference center-s),4.9
+497,((scene OR object-X) CLOSE object-X),((cockpit-s OR seat-X) CLOSE windowpane-X),4.4
+498,((scene OR scene) CLOSE object),((corridor-s OR warehouse-indoor-s) CLOSE floor),5.1
+499,(object OR object OR part),(sofa OR cushion OR inside arm),6.4
+500,(object OR scene OR object-X),(seat OR cemetery-s OR chimney-X),4.4
+501,(object-X OR object-X OR object-X),(washer-X OR water tower-X OR windmill-X),4.7
+502,(object-X OR object OR object-X),(book-X OR bookcase OR shirt-X),4.5
+503,((object-X OR object) CLOSE object-X),((stove-X OR work surface) CLOSE wall-X),5.6
+504,(object-X OR object-X OR object-X),(rock-X OR waterfall-X OR rubbish-X),3.8
+505,(object OR object-X OR object-X),(bed OR hot tub-X OR bathtub-X),4.4
+506,(object-X OR object-X OR object-X),(stage-X OR bandstand-X OR trade name-X),3.8
+507,((object AND color-X) OR object-X),((building AND brown-c-X) OR village-X),4.4
+508,(object-X OR object OR object),(computer-X OR television OR stove),6.5
+509,(object-X OR scene OR object-X),(rubbish-X OR medina-s OR shanties-X),3.6
+510,(object-X OR object OR object),(dam-X OR greenhouse OR waterfall),4.1
+511,(object CLOSE TO object & object-X),(building CLOSE TO car & tree-X),5.1
