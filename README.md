@@ -4,6 +4,14 @@
 
 If you just want to look at non-cherry picked results, check out the .html files under results/. FL indicates formula length, and close/standard indicates whether the algorithm is using the new set of connectors. The browser may take a few seconds to load the files because of the large number of images.
 
+## Annotation Game
+
+You can play the annotation game at resnetannotationgame.com/(number_of_neuron).html, with (number_of_neuron) going from 0 to 511. E.g.:
+
+https://resnetannotationgame.com/34.html
+
+
+
 ## Setup Instructions
 
 1. Download Broden dataset with `./script/dlbroden.sh`.
