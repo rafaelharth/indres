@@ -13,7 +13,7 @@ https://resnetannotationgame.com/34.html
 
 ## Setup Instructions
 
-0. If you want to replicate the results, you can download the results from the `noresults` branch as supposed to `main`, which is much smaller.
+0. If you want to replicate the results, you can clone the `noresults` branch instead of `main`.
 1. Download Broden dataset with `./script/dlbroden.sh`.
 2. Run `./script/dlzoo_example.sh` to download `resnet18` trained on `places365`.
 3. Ensure necessary dependencies; you should be able to clone an environment from environment.yml without complications.
