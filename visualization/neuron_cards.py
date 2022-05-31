@@ -28,7 +28,7 @@ RED_TINT = np.array([MG * 255, -MG * 255, -MG * 255])
 
 
 
-def create(R, inspected_neurons, image_width=300):
+def create(R, inspected_neurons, image_width=112):
     def add_colored_masks(img_, label_mask_, neuron_mask_):
         img_ = img_.astype(np.int64)
 
@@ -116,16 +116,12 @@ def create(R, inspected_neurons, image_width=300):
     indices_with_nonzero_label_activations = np.where(label_tallies > 0)[0]
 
     Is = list(np.intersect1d(indices_with_nonzero_neuron_activations, indices_with_nonzero_label_activations))
-    # Is = list(indices_with_nonzero_neuron_activations[0])
-    # Is = list(range(500, 600))
-    # Is = [18142, 7001, 15635, 2477, 573, 547, 19377, 16129, 3089]
 
     try:
         random_subset_of_indices = Util.sample_with_duplicates_if_necessary(Is, settings.SAMPLE_N)
     except ValueError:
         print(label_tallies.shape, "", neuron_tallies.shape)
         sys.exit(3)
-    # random_subset_of_indices = [8594, 3486, 19461, 21204, 11178,5331, 13614, 11773, 12971]
 
 
     label_masks_resized = [None] * len(random_subset_of_indices)
@@ -159,7 +155,7 @@ def create(R, inspected_neurons, image_width=300):
         Image.fromarray(img_masked).save(os.path.join(settings.OUTPUT_FOLDER, row1fns[picture_i]))
 
         img_html = f'<img loading="eager" src="{row1fns[picture_i]}" height="{image_width}">'
-        html.append(HTMLCommon.wrap_image(img_html, infos=[f"{score:.3f} / {iou:.3f} / id {random_image_i}"]))
+        html.append(HTMLCommon.wrap_image(img_html, infos=[f"{score:.3f} / {iou:.3f}"]))
     html.append("</div>")
 
 
