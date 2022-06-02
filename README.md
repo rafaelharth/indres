@@ -34,3 +34,7 @@ The `results/` directory contains the following files:
 ## Credit
 
 The code for this project has been originally taken from Mu and Andreas' paper [Compositional Explanations of Neurons](https://arxiv.org/abs/2006.14032), licensed under [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/). The code has been edited substantially, including changes to the folder structure and the names of classes, often to the point of unrecognizability. Credit is also given in the comment at the top of every class which at some point contained code from the above release.
+
+## Springer Link
+
+You can find the published version of the paper on https://link.springer.com/chapter/10.1007/978-3-031-09282-4_24.
