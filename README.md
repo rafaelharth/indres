@@ -10,8 +10,6 @@ You can play the annotation game at resnetannotationgame.com/(number_of_neuron).
 
 https://resnetannotationgame.com/34.html
 
-Edit: This currently only works with neurons 0-140 due to web issues.
-
 ## Setup Instructions
 
 0. If you want to replicate the results, you can clone the `noresults` branch instead of `main`.
